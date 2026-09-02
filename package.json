@@ -1,0 +1,15 @@
+{
+  "name": "learn-business",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "产品 · 管理 · 运营 商业知识库 — business.zenheart.site",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.3"
+  }
+}

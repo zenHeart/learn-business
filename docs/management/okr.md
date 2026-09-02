@@ -24,7 +24,7 @@
 - **愿景型**：按照完成度评判（尽可能做好）
   - 结果目标需要超出用户的既有需求
 
-![OKR 策略分析](../assets/okr-策略分析.jpg)
+![OKR 策略分析](/assets/okr-策略分析.jpg)
 
 ## OKR Checklist
 
