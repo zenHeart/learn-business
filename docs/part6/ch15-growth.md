@@ -50,14 +50,25 @@ Daniel Vassallo 的路线（2019-2024 年收 $33k→$620k）：**同时押多个
 
 ## 增长模型与它们的局限
 
-AARRR（获客→激活→留存→收入→推荐）是最常用的诊断框架：
+```
+传统 AARRR（诊断漏斗，单向无复利）：
+  Acquisition → Activation → Retention → Revenue → Referral
+                                          ↑ 这一段再不复利
+
+校准 RARRA（一人公司的执行顺序）：
+  Retention ★ → Activation → Referral → Revenue → Acquisition
+  ▲
+  不跑通这里，下面全部不要投
+```
+
+AARRR（获客→激活→留存→收入→推荐）是最常用的诊断框架。
 
 **已知局限**（必须知道）：
 - 单向漏斗无复利（底部产出不能回流顶部）
 - 按层切团队 → 局部优化（营销灌水、留存崩）
 - 阶段并非严格顺序（双边市场非线性——付费可能先于激活）
 
-**配套校准顺序**：RARRA（Retention → Activation → Referral → Revenue → Acquisition）——**留存没跑通之前，不投获客**——往漏桶倒水是一人公司最贵的错误。
+**配套校准顺序**：RARRA（Retention → Activation → Referral → Revenue → Acquisition）。**留存没跑通之前，不投获客**——往漏桶倒水是一人公司最贵的错误。
 
 北极星指标（一个最能代表用户价值的指标）用于对齐：
 

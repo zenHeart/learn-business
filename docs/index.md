@@ -17,23 +17,23 @@ features:
   - icon: 🧭
     title: 起点：定位与验证
     details: 技能×痛点×微利基的三环定位；预售与落地页验证——写代码之前先拿到第一个"愿意付钱"的信号。
-    link: /part1/ch1-positioning
+    link: /part1/ch05-positioning-validation
   - icon: 📦
     title: 产品与定价
     details: 从技能到可交付物（服务→数字产品→软件）；从成本定价到价值定价；两周 MVP 的纪律。
-    link: /part2/ch3-productization
+    link: /part2/ch06-productization
   - icon: 📬
     title: 受众与转化
     details: 受众优先于产品；邮件列表的真实价值（法则与实测差 5 倍）；落地页转化率双口径与支付闭环。
-    link: /part3/ch5-audience
+    link: /part3/ch08-audience
   - icon: ⚙️
     title: 运营
     details: AI 工具栈把启动成本降 92% 之后；一人主体的财务法务；一人的自我运营（决策、精力、OKR）。
-    link: /part4/ch7-delivery
+    link: /part5/ch12-delivery
   - icon: 🚀
     title: 增长与终局
     details: 不加人的增长杠杆；$10k MRR 只有 3-6% 能到——以及为什么终局可以是"不再增长"。
-    link: /part5/ch10-growth
+    link: /part6/ch15-growth
 ---
 
 ## 这本书的立场

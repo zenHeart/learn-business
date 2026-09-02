@@ -1,0 +1,260 @@
+/* ============================================================
+   一人公司 · 站点主题
+   设计目标：教材质感 / 长时间阅读舒适 / 信息密度合理
+   ============================================================ */
+
+:root {
+  /* 字体：标题中文走思源宋体（教材感），正文中文走系统默认；英文走 Inter 系列 */
+  --vp-font-family-base:
+    "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Hirigino Sans GB", "Microsoft YaHe", "WenQuanYi Micro HeHei",
+    "Helvetica Neue", Arial, sans-serif;
+  --vp-font-family-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono",
+    Menlo, Monaco, Consolas, monospace;
+
+  /* 色彩：暗色以靛青/琥珀为主，明色以墨黑/橙红为主 */
+  --brand-primary: #e85d3a;             /* 主体橙红 —— 强调重点 */
+  --brand-primary-soft: #f1a8a0;
+  --brand-accent:  #2b6cb0;             /* 信息蓝 —— 链接与次级 */
+  --brand-quote:   #c19a4a;             /* 引用金 —— 关键引文 */
+}
+
+.dark {
+  --brand-primary: #f1917e;
+  --brand-primary-soft: #c46b5a;
+  --brand-accent:  #7eb0e8;
+  --brand-quote:   #d4b06a;
+}
+
+/* ----------------------------------------------------------
+   全局排版
+   ---------------------------------------------------------- */
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/* 长段落中文版首行缩进（教材阅读习惯——开启与否由 .prose 容器控制） */
+.prose p { margin: 0.85em 0; }
+
+/* 标题层次 */
+.VPDoc h1, .VPNavBarTitle {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.VPDoc h2 {
+  font-weight: 700;
+  margin-top: 2.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.VPDoc h3 {
+  font-weight: 600;
+  margin-top: 1.8em;
+}
+.VPDoc h4 {
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  margin-top: 1.6em;
+}
+
+/* ----------------------------------------------------------
+   引文与代码块
+   ---------------------------------------------------------- */
+
+blockquote {
+  border-left: 3px solid var(--brand-primary);
+  background: var(--vp-c-bg-soft);
+  padding: 0.9em 1.2em;
+  margin: 1.2em 0;
+  border-radius: 0 4px 4px 0;
+  color: var(--vp-c-text-2);
+  font-style: normal;
+}
+blockquote p { margin: 0.4em 0; }
+blockquote strong, blockquote code {
+  color: var(--brand-primary);
+}
+
+.vp-doc blockquote > p > strong:first-child,
+blockquote > p > em:first-child {
+  color: var(--brand-primary);
+}
+
+/* 代码块 */
+.vp-code-block, div[class*='language-'] {
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: none  0 1px 0 rgba(0,0,0,0.04);
+}
+div[class*='language-'] pre {
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* 行内代码 */
+p code, li code, td code {
+  background: var(--vp-c-bg-soft);
+  padding: 0.12em 0.36em;
+  border-radius: 3px;
+  font-size: 0.88em;
+  color: var(--brand-accent);
+}
+
+/* ----------------------------------------------------------
+   表格（基准数据 / 阶段对比 是高频元素）
+   ---------------------------------------------------------- */
+
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  font-size: 14.5px;
+}
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  text-align: left;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+.vp-doc th, .vp-doc td {
+  padding: 0.65em 0.95em;
+  border-bottom: 1px solid var(--vp-c-divider);
+  vertical-align: top;
+}
+.vp-doc tr:hover td { background: var(--vp-c-bg-soft); }
+
+/* ----------------------------------------------------------
+   自定义容器（要点/坑/证伪/基准速查）
+   ---------------------------------------------------------- */
+
+/* 章节开头的「本章目标」与结尾的「验收标准」用 custom-container 区分 */
+.custom-block {
+  border-left-width: 3px;
+  padding: 0.85rem 1.1rem;
+  margin: 1.2em 0;
+}
+.custom-block p:first-child { margin-top: 0; }
+.custom-block p:last-child { margin-bottom: 0; }
+.custom-block-title { font-weight: 600; font-size: 0.92em; letter-spacing: 0.02em; }
+
+/* "坑与证伪" —— 红边 + 浅红背景 */
+.custom-block.warning,
+.custom-block.caution,
+.custom-block.danger {
+  border-color: var(--brand-primary);
+  background: color-mix(in srgb, var(--brand-primary) 6%, transparent);
+}
+.custom-block.warning .custom-block-title,
+.custom-block.caution .custom-block-title,
+.custom-block.danger .custom-block-title { color: var(--brand-primary); }
+
+/* "基准数据 / 行业共识" —— 蓝边 */
+.custom-block.info,
+.custom-block.tip,
+.custom-block.note {
+  border-color: var(--brand-accent);
+  background: color-mix(in srgb, var(--brand-accent) 6%, transparent);
+}
+.custom-block.info .custom-block-title,
+.custom-block.tip .custom-block-title,
+.custom-block.note .custom-block-title { color: var(--brand-accent); }
+
+/* "核心警句/引言" —— 金边 + 浅金 */
+.custom-block.quote,
+.custom-block.abstract {
+  border-color: var(--brand-quote);
+  background: color-mix(in srgb, var(--brand-quote) 6%, transparent);
+}
+.custom-block.quote .custom-block-title,
+.custom-block.abstract .custom-block-title { color: var(--brand-quote); }
+
+/* ----------------------------------------------------------
+   顶部导航：单 menu 极简风格
+   ---------------------------------------------------------- */
+
+.VPNavBar { backdrop-filter: blur(10px); border-bottom: 1px solid var(--vp-c-divider); }
+.VPNavBarTitle .title { font-weight: 700; letter-spacing: -0.01em; }
+.VPNavBarMenuGroup { gap: 0.4rem; }
+.VPNavBarMenuLink {
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+}
+.VPNavBarMenuLink.active {
+  background: color-mix(in srgb, var(--brand-primary) 12%, transparent);
+  color: var(--brand-primary);
+}
+
+/* ----------------------------------------------------------
+   侧栏索引（书籍目录）
+   ---------------------------------------------------------- */
+
+.VPSidebarItem.level-0 > .item > .text { font-weight: 600; letter-spacing: 0.01em; }
+.VPSidebarItem.level-1 > .item { padding-left: 0.5rem; }
+.VPSidebarItem.level-1 > .item > .text {
+  font-size: 13.5px;
+  color: var(--vp-c-text-2);
+}
+
+/* ----------------------------------------------------------
+   首页 Hero
+   ---------------------------------------------------------- */
+
+.VPHero .name { font-weight: 800; letter-spacing: -0.02em; }
+.VPHero .text { font-weight: 700; letter-spacing: -0.01em; }
+.VPHero .description { font-size: 17px; line-height: 1.7; max-width: 720px; margin-inline: auto; }
+
+/* ----------------------------------------------------------
+   章节首页的"本章目标" 块
+   ---------------------------------------------------------- */
+
+/* 让每章第一行的 blockquote（"本章目标"）更醒目 */
+.vp-doc > blockquote:first-of-type {
+  font-size: 15.5px;
+  border-left-width: 4px;
+}
+
+/* ----------------------------------------------------------
+   思考题 / 验收标准
+   ---------------------------------------------------------- */
+
+.vp-doc hr {
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 2.5em 0 1.5em;
+}
+.vp-doc h2 + h3 + ul + hr,
+.vp-doc h2 + p + hr { margin-top: 2.5em; }
+
+/* ----------------------------------------------------------
+   暗色模式微调
+   ---------------------------------------------------------- */
+
+.dark blockquote { background: color-mix(in srgb, var(--brand-primary) 6%, transparent); }
+.dark .custom-block.warning,
+.dark .custom-block.caution,
+.dark .custom-block.danger { background: color-mix(in srgb, var(--brand-primary) 8%, transparent); }
+.dark .custom-block.info,
+.dark .custom-block.tip,
+.dark .custom-block.note { background: color-mix(in srgb, var(--brand-accent) 8%, transparent); }
+
+/* ----------------------------------------------------------
+   打印优化（教材用户常打印章节）
+   ---------------------------------------------------------- */
+
+@media print {
+  .VPNavBar, .VPSidebar, .VPNavBar.has-sidebar { display: none !important; }
+  .VPDoc { padding: 0 !important; max-width: 100% !important; }
+  a { color: inherit; text-decoration: none; }
+  .vp-doc h2 { break-before: page; }
+  .custom-block { break-inside: avoid; }
+}
