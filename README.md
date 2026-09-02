@@ -27,6 +27,9 @@ learn-business/
 | --- | --- | --- |
 | learn-product | 已并入（本仓库前身） | README 目录规划 → 01/02/04 模块骨架 |
 | learn-manage | 已并入 | `_draft/okr.md` → `03-management/okr.md` |
+| learn-operation | 已并入 | `nps.md` → `02-operations/nps.md` |
+
+以上仓库经核查均无 issue / PR 存量，无额外数据需要迁移。
 
 已有学习资料分布（保持原地，只索引不搬运）：
 
