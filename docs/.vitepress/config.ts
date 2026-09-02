@@ -19,27 +19,8 @@ export default defineConfig({
 
     // 顶部仅保留品牌标题与主索引入口；侧栏做完整目录（替代每章一个 menu）
     nav: [
-      {
-        text: '书籍',
-        items: [
-          { text: '开篇词 · 简介 · 结束语', link: '/preface' },
-          { text: '第一部分　认识商业（ch01-03）', link: '/part0/ch01-what-is-business' },
-          { text: '第二部分　起点（ch04-05）', link: '/part1/ch04-demand' },
-          { text: '第三部分　产品与定价（ch06-07）', link: '/part2/ch06-productization' },
-          { text: '第四部分　运营与推广（ch08-10）', link: '/part3/ch08-audience' },
-          { text: '第五部分　数据（ch11）', link: '/part4/ch11-data' },
-          { text: '第六部分　经营自己（ch12-14）', link: '/part5/ch12-delivery' },
-          { text: '第七部分　增长与终局（ch15-16）', link: '/part6/ch16-endgame' },
-        ],
-      },
-      {
-        text: '附录',
-        items: [
-          { text: '基准数据速查表', link: '/appendix/benchmarks' },
-          { text: '工程师转管理（全本）', link: '/appendix/eng-to-manager' },
-          { text: '述职与向上汇报（全本）', link: '/appendix/reporting' },
-        ],
-      },
+      { text: '书籍', link: '/preface' },
+      { text: '附录', link: '/appendix/benchmarks' },
     ],
 
     // 左侧按"所在部分"自动渲染侧栏索引
