@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "title": "商业判断力 L2 系列课程图谱",
+  "local_series": "learn-business",
+  "capabilities": [
+    {
+      "id": "market-analysis",
+      "title": "市场分析",
+      "outcome": "能用 TAM/SAM/SOM、波特五力与市场生命周期判断一个市场的体量、增速、阶段与可进入性，并写出一份 5 段式市场摘要"
+    },
+    {
+      "id": "competitive-analysis",
+      "title": "竞争分析",
+      "outcome": "能在 30 分钟内对任意赛道识别直接/间接/潜在竞争者，绘制竞品二维矩阵并给出差异化缺口假设"
+    },
+    {
+      "id": "business-models",
+      "title": "商业模式",
+      "outcome": "能复述并应用商业模式画布 9 宫格、科斯交易成本理论、Teece 盈利机制，并为自己的生意选型与表达"
+    },
+    {
+      "id": "unit-economics",
+      "title": "单位经济学",
+      "outcome": "能独立计算 LTV / CAC / 回本周期 / 毛利率 / 净燃烧率，给出改善杠杆的优先排序"
+    },
+    {
+      "id": "gtm-strategy",
+      "title": "进入市场策略",
+      "outcome": "能针对 B2B / B2C / 平台 / 硬件四类业务设计 GTM 路径，识别渠道优先级与首批 100 客户获取手段"
+    },
+    {
+      "id": "product-positioning",
+      "title": "产品定位",
+      "outcome": "能用三环定位（人群 × 痛点 × 微利基）与定位句式写出一句可被对手测试反驳的定位语"
+    },
+    {
+      "id": "pricing-strategies",
+      "title": "定价策略",
+      "outcome": "能在成本定价、价值定价、竞争定价、阶梯定价之间按业务阶段选择合理策略并算出演示价格"
+    },
+    {
+      "id": "customer-segmentation",
+      "title": "客户细分",
+      "outcome": "能用 JTBD、人口学、行为学三类维度切分客户，并识别高价值细分群的识别信号"
+    },
+    {
+      "id": "growth-loops",
+      "title": "增长循环",
+      "outcome": "能区分病毒循环、付费循环、内容循环、销售循环四类增长引擎并为产品选择一种主循环"
+    },
+    {
+      "id": "retention-metrics",
+      "title": "留存指标",
+      "outcome": "能区分 NRR / GRR / Churn / DAU/MAU / RARRA 并搭建留存仪表盘与漏斗监控"
+    },
+    {
+      "id": "revenue-models",
+      "title": "营收模型",
+      "outcome": "能识别订阅、交易、授权、广告、混合五种营收模型并按行业基准选定主模型"
+    },
+    {
+      "id": "strategic-frameworks",
+      "title": "战略框架",
+      "outcome": "能应用波特三大战略、SWOT、BCG 矩阵、Good Strategy/Bad Strategy 检验制定战略叙述"
+    },
+    {
+      "id": "fundraising",
+      "title": "融资",
+      "outcome": "能区分债权/股权/SAFE/可转债工具、估值锚点与稀释计算，输出融资节奏与条款清单"
+    },
+    {
+      "id": "capstone-strategy",
+      "title": "终局策略",
+      "outcome": "能在生活方式封顶、自动化持有、退出出售三条终局路径中明确选择并把每一阶段策略对齐到终局"
+    }
+  ],
+  "sources": [
+    {
+      "id": "coase-1937",
+      "url": "https://www.jstor.org/stable/2626878",
+      "locator": "The Nature of the Firm",
+      "accessed_at": "2026-09-20",
+      "scope": "经典经济学文献；用于支撑 business-models 与 strategic-frameworks 中交易成本与组织边界议题"
+    },
+    {
+      "id": "teece-2010",
+      "url": "https://www.businessmodelcommunity.com/sites/default/files/Profiting_from_Innovation_Teece.pdf",
+      "locator": "Business Models, Business Strategy and Innovation",
+      "accessed_at": "2026-09-20",
+      "scope": "Teece 盈利机制模型；用于 business-models 与 capstone-strategy"
+    },
+    {
+      "id": "ostranova-99",
+      "url": "https://longform.asleepintheweeds.com/",
+      "locator": "公开访谈与文章",
+      "accessed_at": "2026-09-20",
+      "scope": "中位数数据与独立产品收入分布的二级来源；用于 unit-economics 与 retention-metrics"
+    },
+    {
+      "id": "magic-circle-bench",
+      "url": "https://openviewpartners.com/blog/2022-saas-pricing-benchmarks",
+      "locator": "OpenView 2022 SaaS Bench",
+      "accessed_at": "2026-09-20",
+      "scope": "SaaS 订阅定价基准；用于 pricing-strategies 与 revenue-models"
+    },
+    {
+      "id": "stripe-atlas-2024",
+      "url": "https://stripe.com/atlas/guides/business-model",
+      "locator": "Atlas Guide: Business Models",
+      "accessed_at": "2026-09-20",
+      "scope": "商业模式画布与公司形态对比；用于 business-models 与 capstone-strategy"
+    },
+    {
+      "id": "a16z-marketplace",
+      "url": "https://a16z.com/marketplace-100/",
+      "locator": "Marketplace 100 Index",
+      "accessed_at": "2026-09-20",
+      "scope": "平台与市场类业务增长引擎；用于 gtm-strategy 与 growth-loops"
+    },
+    {
+      "id": "y-combinator-pricing",
+      "url": "https://www.ycombinator.com/library/4D-pricing-saas-products",
+      "locator": "YC Library: Pricing SaaS Products",
+      "accessed_at": "2026-09-20",
+      "scope": "早期 SaaS 定价策略；用于 pricing-strategies"
+    },
+    {
+      "id": "reforge-positioning",
+      "url": "https://www.reforge.com/blog/growth-loops",
+      "locator": "Reforge Blog: Growth Loops",
+      "accessed_at": "2026-09-20",
+      "scope": "增长循环范式；用于 growth-loops 与 retention-metrics"
+    },
+    {
+      "id": "openview-nrr-2023",
+      "url": "https://openviewpartners.com/blog/nrr-saas-metric",
+      "locator": "Net Revenue Retention",
+      "accessed_at": "2026-09-20",
+      "scope": "NRR / GRR 行业基准；用于 retention-metrics"
+    },
+    {
+      "id": "pitchbook-valuation",
+      "url": "https://pitchbook.com/news/articles/the-state-of-venture-capital",
+      "locator": "Pitchbook State of VC",
+      "accessed_at": "2026-09-20",
+      "scope": "估值倍数与融资节奏；用于 fundraising"
+    },
+    {
+      "id": "bcg-strategy",
+      "url": "https://www.bcg.com/publications/2015/business-model-innovation",
+      "locator": "BCG: Business Model Innovation",
+      "accessed_at": "2026-09-20",
+      "scope": "战略框架综合；用于 strategic-frameworks"
+    },
+    {
+      "id": "good-strategy-bad",
+      "url": "https://www.goodreads.com/book/show/11738136-good-strategy-bad-strategy",
+      "locator": "Rumelt: Good Strategy Bad Strategy",
+      "accessed_at": "2026-09-20",
+      "scope": "战略好坏鉴别；用于 strategic-frameworks"
+    },
+    {
+      "id": "indie-hackers-dist",
+      "url": "https://www.indiehackers.com/post/how-much-do-indie-hackers-actually-make",
+      "locator": "Indie Hackers MRR distribution",
+      "accessed_at": "2026-09-20",
+      "scope": "独立开发者 MRR 分布；用于 unit-economics"
+    },
+    {
+      "id": "zeng-heart-archive",
+      "url": "https://github.com/zenHeart/learn-business",
+      "locator": "本仓库 docs/part0–part6 共 16 章",
+      "accessed_at": "2026-09-20",
+      "scope": "本仓库一手内容；用于系列 self-grounding 与案例引用"
+    }
+  ],
+  "series": [
+    {
+      "id": "learn-business",
+      "repository": "https://github.com/zenHeart/learn-business",
+      "revision": "ae6057dc008926300a6c01c1bcc44b769627cf24",
+      "entry": "docs/index.md",
+      "capability_refs": [
+        "market-analysis",
+        "competitive-analysis",
+        "business-models",
+        "unit-economics",
+        "gtm-strategy",
+        "product-positioning",
+        "pricing-strategies",
+        "customer-segmentation",
+        "growth-loops",
+        "retention-metrics",
+        "revenue-models",
+        "strategic-frameworks",
+        "fundraising",
+        "capstone-strategy"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-foreign-trade-ai-mail",
+      "owner": "learn-business",
+      "title": "外贸 AI 回邮 SaaS 的 LTV/CAC 体检",
+      "kind": "business",
+      "task": "为一家客单 3000 元/月、AI 自动回复境外客户邮件的 SaaS 计算 LTV、CAC 与回本周期，并指出降 CAC 的杠杆",
+      "constraints": [
+        "客单 3000 元/月",
+        "CAC 估算上限 9000 元",
+        "数据来自仓库 part0 真实案例脱敏",
+        "验证留存需 12 个月以上"
+      ],
+      "deliverables": [
+        "LTV/CAC 比值与回本月数",
+        "至少 2 个降 CAC 杠杆假设",
+        "留存队列表（按月）"
+      ],
+      "acceptance": [
+        "LTV/CAC 数字给出明确值与假设链路",
+        "杠杆按 ROI 排序",
+        "留存队列能解释 NRR 走向"
+      ],
+      "environment": "脱敏 case study；不依赖真实客户数据",
+      "entry": "docs/part0/ch01-what-is-business.md",
+      "transfer": "切到跨境独立站代运营场景，重做整套数字",
+      "delayed_check": "30 天后用同口径再算一次，要求偏差 < 15%",
+      "provenance": "documented-project",
+      "verification": "not-run",
+      "capability_refs": ["unit-economics", "retention-metrics", "pricing-strategies"],
+      "source_refs": ["ostranova-99", "openview-nrr-2023"]
+    },
+    {
+      "id": "case-positioning-3rings",
+      "owner": "learn-business",
+      "title": "三环定位的反驳测试",
+      "kind": "business",
+      "task": "为一款面向独立设计师的发票工具写定位句，跑对手测试，记录三种典型反驳并迭代",
+      "constraints": [
+        "人群必须可定位（独立设计师而非'设计师'）",
+        "痛点必须付费级",
+        "必须有 3 个真实对手可对比"
+      ],
+      "deliverables": [
+        "v1/v2/v3 三轮定位句",
+        "对手反驳清单",
+        "胜出版本的微利基重写"
+      ],
+      "acceptance": [
+        "对手反驳能聚焦到'为什么是你而不是他'",
+        "微利基写到具体行业 + 角色 + 场景",
+        "迭代后定位句不含同质化形容词"
+      ],
+      "environment": "静态文档案例，无需运行",
+      "entry": "docs/part1/ch05-positioning-validation.md",
+      "transfer": "把人群换到独立咨询顾问，重做定位句",
+      "delayed_check": "1 周后用空白状态再写一次",
+      "provenance": "designed",
+      "verification": "not-run",
+      "capability_refs": ["product-positioning", "competitive-analysis", "customer-segmentation"],
+      "source_refs": ["reforge-positioning"]
+    },
+    {
+      "id": "case-pricing-mvp",
+      "owner": "learn-business",
+      "title": "MVP 两周内完成定价三选",
+      "kind": "business",
+      "task": "在 MVP 两周内完成成本定价、价值定价、阶梯定价三选一，记录决策依据与上线后第一周转化",
+      "constraints": [
+        "上线后 7 天内回收至少 30 个独立访客行为",
+        "价格区间必须解释给 5 个潜在用户",
+        "必须有竞争对照表"
+      ],
+      "deliverables": [
+        "三方案对比表",
+        "选定方案与理由",
+        "上线后第一周转化数字"
+      ],
+      "acceptance": [
+        "理由链至少包含 4 个权衡点",
+        "对照表必须含 3 家竞品",
+        "复盘说明'哪条理由在事后被证伪'"
+      ],
+      "environment": "可独立完成，无需部署",
+      "entry": "docs/part2/ch07-pricing.md",
+      "transfer": "把产品切到 B2B，重做整套定价流程",
+      "delayed_check": "30 天后回看转化率",
+      "provenance": "designed",
+      "verification": "not-run",
+      "capability_refs": ["pricing-strategies", "revenue-models", "gtm-strategy"],
+      "source_refs": ["y-combinator-pricing", "magic-circle-bench"]
+    },
+    {
+      "id": "case-growth-loop-saas",
+      "owner": "learn-business",
+      "title": "为协作 SaaS 选一种主增长循环",
+      "kind": "business",
+      "task": "在病毒循环、付费循环、内容循环、销售循环四类中选一种为主，并为协作 SaaS 写出 90 天执行清单",
+      "constraints": [
+        "循环必须满足自我强化（input → output → input）",
+        "必须给出口径（如每邀请 1 人带来多少新用户）",
+        "必须能识别终止条件"
+      ],
+      "deliverables": [
+        "选定循环 + 90 天清单",
+        "终止条件清单",
+        "复盘节点表"
+      ],
+      "acceptance": [
+        "循环公式可被一句话表达",
+        "口径有可观测代理指标",
+        "终止条件写到具体数字阈值"
+      ],
+      "environment": "可在静态文档中模拟",
+      "entry": "docs/part6/ch15-growth.md",
+      "transfer": "把协作 SaaS 换到消费内容社区，重选",
+      "delayed_check": "60 天后用同公式校验",
+      "provenance": "designed",
+      "verification": "not-run",
+      "capability_refs": ["growth-loops", "retention-metrics", "gtm-strategy"],
+      "source_refs": ["reforge-positioning", "a16z-marketplace"]
+    },
+    {
+      "id": "case-fundraising-stack",
+      "owner": "learn-business",
+      "title": "早期融资工具栈选择",
+      "kind": "business",
+      "task": "为一家种子轮 SaaS 在 SAFE、可转债、股权融资三选一，给出 12 个月现金流下的判断",
+      "constraints": [
+        "跑道 < 12 个月需明确警示",
+        "估值锚必须给口径",
+        "稀释计算需考虑期权池"
+      ],
+      "deliverables": [
+        "工具选型表",
+        "估值倍数与稀释后股权",
+        "12 个月现金流压力测试"
+      ],
+      "acceptance": [
+        "选型理由含 4 个权衡维度",
+        "稀释计算至少 3 个场景",
+        "警示阈值（< 6 个月跑道）独立标注"
+      ],
+      "environment": "可在公开估值数据上完成",
+      "entry": "docs/part5/ch13-finance.md",
+      "transfer": "切到生活方式生意，融资不再适用，记录如何替换为利润再投资",
+      "delayed_check": "30 天后重算估值锚",
+      "provenance": "designed",
+      "verification": "not-run",
+      "capability_refs": ["fundraising", "unit-economics", "capstone-strategy"],
+      "source_refs": ["pitchbook-valuation"]
+    }
+  ],
+  "roles": [
+    {
+      "id": "role-founder",
+      "title": "早期创始人",
+      "responsibility": "独立完成定位、验证、产品、获客到 100 付费客户",
+      "task_refs": ["case-foreign-trade-ai-mail", "case-positioning-3rings", "case-pricing-mvp"],
+      "requirements": [
+        {
+          "logic": "any",
+          "capability_refs": ["product-positioning", "pricing-strategies"],
+          "source_refs": ["reforge-positioning", "y-combinator-pricing"]
+        },
+        {
+          "logic": "all",
+          "capability_refs": ["unit-economics", "retention-metrics"],
+          "source_refs": ["openview-nrr-2023", "ostranova-99"]
+        }
+      ]
+    },
+    {
+      "id": "role-growth-lead",
+      "title": "增长负责人",
+      "responsibility": "为已 PMF 产品设计主增长循环并把循环跑出正向 ROI",
+      "task_refs": ["case-growth-loop-saas"],
+      "requirements": [
+        {
+          "logic": "all",
+          "capability_refs": ["growth-loops", "retention-metrics", "gtm-strategy"],
+          "source_refs": ["reforge-positioning", "a16z-marketplace"]
+        }
+      ]
+    },
+    {
+      "id": "role-strategy-operator",
+      "title": "战略运营",
+      "responsibility": "把业务模式与终局对齐，输出可被投资人/合伙人复用的战略文档",
+      "task_refs": ["case-fundraising-stack"],
+      "requirements": [
+        {
+          "logic": "any",
+          "capability_refs": ["business-models", "strategic-frameworks", "capstone-strategy"],
+          "source_refs": ["coase-1937", "good-strategy-bad"]
+        },
+        {
+          "logic": "all",
+          "capability_refs": ["fundraising", "unit-economics"],
+          "source_refs": ["pitchbook-valuation"]
+        }
+      ]
+    }
+  ]
+}
