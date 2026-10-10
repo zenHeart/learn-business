@@ -1,84 +1,160 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
-  lang: 'zh-CN',
-  title: '一人公司',
-  description: '从 0 到终局的完整生命周期 —— 教材化个人商业化手册',
-  head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['meta', { name: 'theme-color', content: '#e85d3a' }],
-  ],
-  cleanUrls: true,
+export default withMermaid(
+  defineConfig({
+    lang: 'zh-CN',
+    title: 'ZenOPC · 一人公司全流程实战手册',
+    description: '从零到一门好生意的完整闭环 —— 小白可落地的个人品牌打造与一人公司商业化盈利指南',
+    head: [
+      ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+      ['meta', { name: 'theme-color', content: '#ea580c' }],
+      ['meta', { name: 'keywords', content: '一人公司,OPC,超级个体,把自己变成一门生意,个人商业化,独立开发,个人品牌,副业变现,AI Agent' }],
+      ['meta', { property: 'og:title', content: 'ZenOPC · 一人公司商业化全流程实战手册' }],
+      ['meta', { property: 'og:description', content: '让零基础小白结合自身特点完成一人公司商业化整套流程，打造个人品牌并实现盈利。' }],
+    ],
+    cleanUrls: true,
 
-  // 自定义样式：教材化排版 + 品牌色 + 打印优化
-  // 加载 custom.css 作为站点级样式覆盖
-  //（VitePress 默认会扫描 docs/.vitepress/theme/ 与 docs/.vitepress/custom.css）
-  // 这里是显式声明 vite options 让 custom.css 被全局引入
+    // Mermaid 主题与自适应配置
+    mermaid: {
+      theme: 'default',
+      darkTheme: 'dark',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis',
+      },
+    },
+
+    mermaidPlugin: {
+      class: 'mermaid',
+    },
+
   themeConfig: {
-    siteTitle: '一人公司',
+    siteTitle: 'ZenOPC · 一人公司',
+    logo: '/logo.svg',
 
-    // 顶部仅保留品牌标题与主索引入口；侧栏做完整目录（替代每章一个 menu）
+    // 顶部主导航
     nav: [
-      { text: '书籍', link: '/preface' },
-      { text: '附录', link: '/appendix/benchmarks' },
+      { text: '📖 商业化全书', link: '/preface' },
+      {
+        text: '🛠️ 实战工具箱',
+        items: [
+          { text: '🗓️ 90天跑通闭环计划', link: '/toolkit/90-days-action-plan' },
+          { text: '🤖 高转化 Prompt 与模板库', link: '/toolkit/templates-and-prompts' },
+          { text: '⚠️ 15大避坑指南与自检表', link: '/toolkit/pitfalls-and-checklists' },
+        ],
+      },
+      { text: '📊 基准数据速查', link: '/appendix/benchmarks' },
+      { text: '⚡ 快速导航', link: '/intro' },
     ],
 
-    // 全书完整 sidebar：所有页面共享同一份全本书结构
+    // 全书体系化侧栏：覆盖全生命周期所有环节
     sidebar: {
       '/': [
-        { text: '序', items: [
-          { text: '开篇词', link: '/preface' },
-          { text: '简介', link: '/intro' },
-          { text: '结束语', link: '/conclusion' },
-        ] },
-        { text: '第一部分　认识商业', items: [
-          { text: 'ch01 商业的本质', link: '/part0/ch01-what-is-business' },
-          { text: 'ch02 商业简史与个人位置', link: '/part0/ch02-history' },
-          { text: 'ch03 商业化理论最小集', link: '/part0/ch03-theory-map' },
-        ] },
-        { text: '第二部分　起点', items: [
-          { text: 'ch04 洞察需求', link: '/part1/ch04-demand' },
-          { text: 'ch05 定位与验证', link: '/part1/ch05-positioning-validation' },
-        ] },
-        { text: '第三部分　产品与定价', items: [
-          { text: 'ch06 产品化', link: '/part2/ch06-productization' },
-          { text: 'ch07 定价', link: '/part2/ch07-pricing' },
-        ] },
-        { text: '第四部分　运营与推广', items: [
-          { text: 'ch08 受众与内容运营', link: '/part3/ch08-audience' },
-          { text: 'ch09 推广与获客', link: '/part3/ch09-promotion' },
-          { text: 'ch10 转化与销售', link: '/part3/ch10-conversion' },
-        ] },
-        { text: '第五部分　数据', items: [
-          { text: 'ch11 一人公司的数据挖掘', link: '/part4/ch11-data' },
-        ] },
-        { text: '第六部分　经营自己', items: [
-          { text: 'ch12 交付与自动化', link: '/part5/ch12-delivery' },
-          { text: 'ch13 财务与法务', link: '/part5/ch13-finance' },
-          { text: 'ch14 自我运营', link: '/part5/ch14-self-ops' },
-        ] },
-        { text: '第七部分　增长与终局', items: [
-          { text: 'ch15 增长', link: '/part6/ch15-growth' },
-          { text: 'ch16 终局', link: '/part6/ch16-endgame' },
-        ] },
-        { text: '附录', items: [
-          { text: '基准数据速查表', link: '/appendix/benchmarks' },
-          { text: '工程师转管理（全本）', link: '/appendix/eng-to-manager' },
-          { text: '述职与向上汇报（全本）', link: '/appendix/reporting' },
-        ] },
+        {
+          text: '🌱 序章 · 认识商业与个人位置',
+          collapsed: false,
+          items: [
+            { text: '开篇词：为什么你要懂商业', link: '/preface' },
+            { text: '阅读导引：零基础小白学习路线', link: '/intro' },
+            { text: 'ch01 商业的本质与个人位置', link: '/part0/ch01-what-is-business' },
+            { text: 'ch02 商业简史与 OPC 范式转移', link: '/part0/ch02-history' },
+            { text: 'ch03 商业化理论与最小闭环飞轮', link: '/part0/ch03-theory-map' },
+          ],
+        },
+        {
+          text: '🧭 第一阶段 · 自我盘点与定位验证',
+          collapsed: false,
+          items: [
+            { text: 'ch04 挖掘自身优势与商业支点', link: '/part1/ch04-demand' },
+            { text: 'ch05 付费级需求与一人定位三角', link: '/part1/ch05-positioning-validation' },
+          ],
+        },
+        {
+          text: '📦 第二阶段 · 产品矩阵与价值要约 (Offer)',
+          collapsed: false,
+          items: [
+            { text: 'ch06 结果承诺与产品化阶梯', link: '/part2/ch06-productization' },
+            { text: 'ch07 高客单与价值定价全案', link: '/part2/ch07-pricing' },
+          ],
+        },
+        {
+          text: '📢 第三阶段 · 个人品牌与内容获客',
+          collapsed: false,
+          items: [
+            { text: 'ch08 个人 IP 与信任资产逻辑', link: '/part3/ch08-audience' },
+            { text: 'ch09 AI 内容生产流水线与全网分发', link: '/part3/ch09-promotion' },
+            { text: 'ch10 冷启动获客与首批100种子用户', link: '/part3/ch10-conversion' },
+          ],
+        },
+        {
+          text: '🤝 第四阶段 · 无痛成交与极简交付',
+          collapsed: false,
+          items: [
+            { text: 'ch11 无推销感成交与转化漏斗', link: '/part4/ch11-data' },
+            { text: 'ch12 交付系统与一人服务四大能力', link: '/part5/ch12-delivery' },
+          ],
+        },
+        {
+          text: '⚖️ 第五阶段 · 财务风控与自我经营',
+          collapsed: false,
+          items: [
+            { text: 'ch13 财务合规、税务与现金流安全垫', link: '/part5/ch13-finance' },
+            { text: 'ch14 自我运营：精力、决策与防枯竭', link: '/part5/ch14-self-ops' },
+          ],
+        },
+        {
+          text: '🚀 第六阶段 · 增长飞轮与终局选择',
+          collapsed: false,
+          items: [
+            { text: 'ch15 自动化增长引擎与复利杠杆', link: '/part6/ch15-growth' },
+            { text: 'ch16 终局选择：小而美 vs 资产退出', link: '/part6/ch16-endgame' },
+            { text: '结语：在不确定的世界拥有赚钱的底气', link: '/conclusion' },
+          ],
+        },
+        {
+          text: '🧰 小白实战工具箱 (直接抄作业)',
+          collapsed: false,
+          items: [
+            { text: '🗓️ 90天跑通商业闭环计划', link: '/toolkit/90-days-action-plan' },
+            { text: '🤖 高转化 Prompt 与模板库', link: '/toolkit/templates-and-prompts' },
+            { text: '⚠️ 15大避坑指南与自检清单', link: '/toolkit/pitfalls-and-checklists' },
+          ],
+        },
+        {
+          text: '📚 附录与基准速查',
+          collapsed: true,
+          items: [
+            { text: '基准数据速查表 (转化率/MRR/中位数)', link: '/appendix/benchmarks' },
+            { text: '工程师转管理与商业决策', link: '/appendix/eng-to-manager' },
+            { text: '商业沟通与向上汇报全案', link: '/appendix/reporting' },
+          ],
+        },
       ],
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/zenHeart/learn-business' }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/zenHeart/learn-business' },
+    ],
 
-    outline: { level: [2, 3] },
-
-    footer: {
-      message: '个人学习知识库 · 教材化结构 · 数据均标注来源与口径',
-      copyright: '2026 · zenHeart',
+    outline: {
+      level: [2, 3],
+      label: '本章目录',
     },
 
-    // 顶部目录侧栏按钮（移动端兜底）
-    sidebarMenuLabel: '目录',
+    footer: {
+      message: 'ZenOPC · 一人公司全流程实战手册 | 让每个人都拥有把自己变成一门生意的能力',
+      copyright: 'Copyright © 2026 zenHeart · Released under MIT License',
+    },
+
+    docFooter: {
+      prev: '上一节',
+      next: '下一节',
+    },
+
+    darkModeSwitchLabel: '深色模式',
+    sidebarMenuLabel: '目录菜单',
+    returnToTopLabel: '返回顶部',
   },
-})
+}))
