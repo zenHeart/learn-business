@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="iceberg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1A" />
+      <stop offset="40%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="ice-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+
+    <!-- 水面渐变 -->
+    <linearGradient id="water-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- 冰山三层渐变 -->
+    <linearGradient id="ice-top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="ice-mid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="ice-deep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#31104B" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="url(#iceberg-bg)" />
+  <rect width="1000" height="620" fill="url(#ice-grid)" />
+
+  <!-- 顶部主标题 -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="165" height="24" rx="12" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1" />
+    <text x="82" y="16" fill="#38BDF8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">TACIT KNOWLEDGE</text>
+    <text x="180" y="18" fill="#F8FAFC" font-size="22" font-weight="800" font-family="system-ui, sans-serif">个人隐性知识冰山模型：从“我没特长”到“独家护城河”</text>
+    <text x="0" y="44" fill="#94A3B8" font-size="13" font-family="system-ui, sans-serif">小白并非缺少技能，而是误把水面上同质化的显性技能当作全部；真正带来溢价的是水下 90% 的暗知识与交叉直觉。</text>
+  </g>
+
+  <!-- 左侧：视觉冰山轮廓图 (X: 50~450) -->
+  <g transform="translate(60, 120)">
+    <!-- 水面分界线 -->
+    <path d="M 0 100 Q 100 95, 200 102 T 400 98" fill="none" stroke="url(#water-grad)" stroke-width="2.5" />
+    <text x="390" y="90" fill="#38BDF8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="end">🌊 水面：显性与隐性分界线</text>
+
+    <!-- 冰山顶尖（水上显性 10%） -->
+    <polygon points="200,20 260,98 140,98" fill="url(#ice-top)" stroke="#F8FAFC" stroke-width="1.5" />
+    <circle cx="200" cy="55" r="16" fill="rgba(239, 68, 68, 0.2)" stroke="#EF4444" stroke-width="1" />
+    <text x="200" y="59" fill="#F87171" font-size="10" font-weight="bold" text-anchor="middle">10%</text>
+
+    <!-- 冰山中层（水下 40% 业务暗知识） -->
+    <polygon points="140,102 260,102 330,240 70,240" fill="url(#ice-mid)" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="200" cy="170" r="16" fill="rgba(56, 189, 248, 0.2)" stroke="#38BDF8" stroke-width="1" />
+    <text x="200" y="174" fill="#7DD3FC" font-size="10" font-weight="bold" text-anchor="middle">40%</text>
+
+    <!-- 冰山底层（水下 50% 跨界直觉与认知） -->
+    <polygon points="70,245 330,245 370,390 30,390" fill="url(#ice-deep)" stroke="#A855F7" stroke-width="1.5" />
+    <circle cx="200" cy="315" r="16" fill="rgba(168, 85, 247, 0.2)" stroke="#C084FC" stroke-width="1" />
+    <text x="200" y="319" fill="#E9D5FF" font-size="10" font-weight="bold" text-anchor="middle">50%</text>
+  </g>
+
+  <!-- 右侧：三层结构化深度解析卡片 (X: 480~950) -->
+  <g transform="translate(470, 115)">
+    <!-- 卡片 1：水上显性技能（10%） -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="480" height="110" rx="10" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(239, 68, 68, 0.4)" stroke-width="1.5" />
+      <rect x="16" y="14" width="70" height="20" rx="4" fill="rgba(239, 68, 68, 0.2)" />
+      <text x="51" y="28" fill="#F87171" font-size="10" font-weight="bold" text-anchor="middle">表层 10%</text>
+      <text x="96" y="29" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">显性通用技能（Explicit Skills）</text>
+      <text x="460" y="28" fill="#EF4444" font-size="11" font-weight="bold" text-anchor="end">⚠️ 严重内卷·0溢价</text>
+      <line x1="16" y1="42" x2="464" y2="42" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="16" y="62" fill="#CBD5E1" font-size="12" font-family="system-ui, sans-serif">• 表现形式：写PPT、学Python、懂剪辑、英语四六级、背书式知识</text>
+      <text x="16" y="84" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 市场现实：极度标准化，小白误以为“这就是我的价值”，极易被 AI 一键秒杀</text>
+    </g>
+
+    <!-- 卡片 2：水下行业暗知识（40%） -->
+    <g transform="translate(0, 125)">
+      <rect x="0" y="0" width="480" height="120" rx="10" fill="rgba(3, 105, 161, 0.15)" stroke="#0284C7" stroke-width="1.5" />
+      <rect x="16" y="14" width="70" height="20" rx="4" fill="rgba(2, 132, 199, 0.3)" />
+      <text x="51" y="28" fill="#38BDF8" font-size="10" font-weight="bold" text-anchor="middle">水下 40%</text>
+      <text x="96" y="29" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">行业暗知识与踩坑伤疤（Dark Knowledge）</text>
+      <text x="460" y="28" fill="#38BDF8" font-size="11" font-weight="bold" text-anchor="end">💎 高实战价值</text>
+      <line x1="16" y1="42" x2="464" y2="42" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="16" y="62" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 表现形式：大厂跨部门协作防锅经验、供应商砍价防坑技巧、真实的行业行规</text>
+      <text x="16" y="82" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 核心价值：教科书不写，只有亲历者踩坑亏过几十万才悟出的高密度血泪教训</text>
+      <text x="16" y="102" fill="#7DD3FC" font-size="11" font-family="system-ui, sans-serif">👉 客户愿意为你买单的原因：替他节省 6 个月摸索时间和数万元试错成本</text>
+    </g>
+
+    <!-- 卡片 3：水下底层跨界直觉（50%） -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="480" height="135" rx="10" fill="rgba(88, 28, 135, 0.2)" stroke="#A855F7" stroke-width="1.5" />
+      <rect x="16" y="14" width="70" height="20" rx="4" fill="rgba(168, 85, 247, 0.3)" />
+      <text x="51" y="28" fill="#C084FC" font-size="10" font-weight="bold" text-anchor="middle">水底 50%</text>
+      <text x="96" y="29" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">跨界直觉与认知组合（Unfair Advantage）</text>
+      <text x="460" y="28" fill="#C084FC" font-size="11" font-weight="bold" text-anchor="end">🚀 独占利基垄断</text>
+      <line x1="16" y1="42" x2="464" y2="42" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="16" y="62" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 表现形式：个人世界观、审美直觉、双领域技能交叉乘积、反常识洞察</text>
+      <text x="16" y="82" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 典型组合：程序员+心理学咨询、财务分析师+极简独立开发、妈妈+精力管理</text>
+      <text x="16" y="102" fill="#F1F5F9" font-size="12" font-family="system-ui, sans-serif">• 竞争壁垒：全球可能没有人能在你的个人十字路口击败你，形成自然垄断</text>
+      <text x="16" y="122" fill="#C084FC" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">👉 终极启示：把交叉直觉产品化，你就是该细分领域的唯一标准！</text>
+    </g>
+  </g>
+
+  <!-- 底部关键推论金句条 -->
+  <g transform="translate(50, 535)">
+    <rect x="0" y="0" width="900" height="55" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="24" y="32" fill="#38BDF8" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">挖掘法则：</text>
+    <text x="95" y="32" fill="#F1F5F9" font-size="13" font-family="system-ui, sans-serif">“不要问‘我能学什么新技能’，而要问‘我过去五年受过的苦、填过的坑，能帮谁少走弯路？’那就是你的第一个产品。”</text>
+    <text x="860" y="32" fill="#64748B" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">ZenOPC Architecture</text>
+  </g>
+</svg>

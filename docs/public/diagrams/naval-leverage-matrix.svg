@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0E1726" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+
+    <!-- 卡片渐变 -->
+    <linearGradient id="card-old-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="card-code-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.75" />
+    </linearGradient>
+    <linearGradient id="card-media-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#3B0764" stop-opacity="0.75" />
+    </linearGradient>
+
+    <!-- 辉光滤镜 -->
+    <filter id="glow-teal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 背景底色与网格 -->
+  <rect width="1000" height="620" fill="url(#bg-grad)" />
+  <rect width="1000" height="620" fill="url(#grid-pattern)" />
+
+  <!-- 顶部主标题与副标题 -->
+  <g transform="translate(50, 48)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1" />
+    <text x="65" y="16" fill="#38BDF8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">NAVAL LEVERAGE</text>
+    <text x="145" y="18" fill="#F8FAFC" font-size="22" font-weight="800" font-family="system-ui, sans-serif">纳瓦尔商业四大杠杆矩阵：从“受制于人”到“零边际成本”</text>
+    <text x="0" y="44" fill="#94A3B8" font-size="13" font-family="system-ui, sans-serif">一人公司并不是靠“拼命内卷时间”赚钱，而是用【免许可无形杠杆】放大个人独特认知的边际收益。</text>
+  </g>
+
+  <!-- 左右两栏大对比区域 -->
+  <!-- 左栏：传统工业时代杠杆（需要他人许可） -->
+  <g transform="translate(50, 125)">
+    <!-- 外框大背景 -->
+    <rect x="0" y="0" width="430" height="395" rx="16" fill="rgba(15, 23, 42, 0.5)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
+    
+    <!-- 头部标签 -->
+    <g transform="translate(24, 24)">
+      <rect x="0" y="0" width="160" height="24" rx="6" fill="rgba(239, 68, 68, 0.15)" stroke="#EF4444" stroke-width="1" />
+      <text x="80" y="16" fill="#F87171" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">⚠️ 需要许可（Permissioned）</text>
+      <text x="0" y="48" fill="#E2E8F0" font-size="17" font-weight="bold" font-family="system-ui, sans-serif">旧时代二大杠杆：劳动力与资本</text>
+      <text x="0" y="68" fill="#64748B" font-size="12" font-family="system-ui, sans-serif">依赖外部授权与庞大资源，管理消耗极大，边际成本线性递增</text>
+    </g>
+
+    <!-- 卡片 1：劳动力杠杆 -->
+    <g transform="translate(24, 110)">
+      <rect x="0" y="0" width="382" height="120" rx="10" fill="url(#card-old-grad)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1" />
+      <circle cx="28" cy="28" r="14" fill="rgba(239, 68, 68, 0.2)" />
+      <text x="28" y="33" fill="#FCA5A5" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+      <text x="52" y="32" fill="#F1F5F9" font-size="15" font-weight="bold" font-family="system-ui, sans-serif">劳动力杠杆 (Labor)</text>
+      <text x="320" y="32" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">雇佣与管理</text>
+      <line x1="20" y1="52" x2="362" y2="52" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="74" fill="#CBD5E1" font-size="12" font-family="system-ui, sans-serif">• 核心特征：雇用员工为你干活，依靠组织管理层级扩张</text>
+      <text x="20" y="94" fill="#EF4444" font-size="12" font-family="system-ui, sans-serif">• 致命缺陷：人事摩擦、沟通损耗、反人性博弈、高额固定薪酬</text>
+    </g>
+
+    <!-- 卡片 2：资本杠杆 -->
+    <g transform="translate(24, 245)">
+      <rect x="0" y="0" width="382" height="120" rx="10" fill="url(#card-old-grad)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1" />
+      <circle cx="28" cy="28" r="14" fill="rgba(245, 158, 11, 0.2)" />
+      <text x="28" y="33" fill="#FCD34D" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+      <text x="52" y="32" fill="#F1F5F9" font-size="15" font-weight="bold" font-family="system-ui, sans-serif">资本杠杆 (Capital)</text>
+      <text x="320" y="32" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">金钱放大器</text>
+      <line x1="20" y1="52" x2="362" y2="52" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="74" fill="#CBD5E1" font-size="12" font-family="system-ui, sans-serif">• 核心特征：投入大额资金买厂房、做投放、砸研发做规模</text>
+      <text x="20" y="94" fill="#F59E0B" font-size="12" font-family="system-ui, sans-serif">• 致命缺陷：必须向投资人乞求许可，股权稀释，稍有不慎即破产</text>
+    </g>
+  </g>
+
+  <!-- 中间连接符号：演进箭头 -->
+  <g transform="translate(485, 305)">
+    <circle cx="15" cy="15" r="22" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <path d="M 10 15 L 20 15 M 16 10 L 21 15 L 16 20" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 右栏：数字智能时代杠杆（免许可·零边际成本） -->
+  <g transform="translate(520, 125)">
+    <!-- 外框大背景，高亮绿/青边框 -->
+    <rect x="0" y="0" width="430" height="395" rx="16" fill="rgba(6, 78, 59, 0.15)" stroke="#10B981" stroke-width="1.5" />
+    
+    <!-- 头部标签 -->
+    <g transform="translate(24, 24)">
+      <rect x="0" y="0" width="165" height="24" rx="6" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="1" />
+      <text x="82" y="16" fill="#34D399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">✨ 免许可（Permissionless）</text>
+      <text x="0" y="48" fill="#F8FAFC" font-size="17" font-weight="bold" font-family="system-ui, sans-serif">一人公司两大命脉：代码与媒体</text>
+      <text x="0" y="68" fill="#94A3B8" font-size="12" font-family="system-ui, sans-serif">无需任何巨头授权，复制与分发边际成本为 0，睡后持续产生价值</text>
+    </g>
+
+    <!-- 卡片 3：代码与 AI 杠杆 -->
+    <g transform="translate(24, 110)">
+      <rect x="0" y="0" width="382" height="120" rx="10" fill="url(#card-code-grad)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+      <circle cx="28" cy="28" r="14" fill="rgba(16, 185, 129, 0.3)" />
+      <text x="28" y="33" fill="#6EE7B7" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+      <text x="52" y="32" fill="#ECFDF5" font-size="15" font-weight="bold" font-family="system-ui, sans-serif">代码与 AI 杠杆 (Code &amp; AI)</text>
+      <text x="315" y="32" fill="#34D399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">全自动执行</text>
+      <line x1="20" y1="52" x2="362" y2="52" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="20" y="74" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 核心特征：脚本、微 SaaS、自动化工作流、AI Agent 智能体</text>
+      <text x="20" y="94" fill="#34D399" font-size="12" font-family="system-ui, sans-serif">• 核心红利：一个人调度上万行代码与多个 Agent，为你 7×24h 自动化交付</text>
+    </g>
+
+    <!-- 卡片 4：媒体与内容杠杆 -->
+    <g transform="translate(24, 245)">
+      <rect x="0" y="0" width="382" height="120" rx="10" fill="url(#card-media-grad)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1" />
+      <circle cx="28" cy="28" r="14" fill="rgba(168, 85, 247, 0.3)" />
+      <text x="28" y="33" fill="#E9D5FF" font-size="13" font-weight="bold" text-anchor="middle">4</text>
+      <text x="52" y="32" fill="#FAF5FF" font-size="15" font-weight="bold" font-family="system-ui, sans-serif">媒体与内容杠杆 (Media &amp; IP)</text>
+      <text x="315" y="32" fill="#C084FC" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">全时空信任</text>
+      <line x1="20" y1="52" x2="362" y2="52" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="20" y="74" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 核心特征：文章、深度指南、开源专栏、视频、数字资产</text>
+      <text x="20" y="94" fill="#C084FC" font-size="12" font-family="system-ui, sans-serif">• 核心红利：一次创作，全球百万次无摩擦分发，睡后自动建立信任漏斗</text>
+    </g>
+  </g>
+
+  <!-- 底部关键推论金句条 -->
+  <g transform="translate(50, 540)">
+    <rect x="0" y="0" width="900" height="52" rx="12" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="24" y="31" fill="#38BDF8" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">纳瓦尔法则：</text>
+    <text x="110" y="31" fill="#F1F5F9" font-size="13" font-family="system-ui, sans-serif">“如果你不会写代码，那就去写文章、录播客、造内容；如果你两者皆备，你就是不可战胜的超级个体。”</text>
+    <text x="860" y="31" fill="#64748B" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">ZenOPC Architecture</text>
+  </g>
+</svg>

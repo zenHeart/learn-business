@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbmcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <pattern id="pbmcGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+
+    <filter id="pbmcShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- 语义背景渐变 -->
+    <linearGradient id="gVp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gCs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gKr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gRev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gCost" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="url(#pbmcBg)"/>
+  <rect width="1000" height="620" fill="url(#pbmcGrid)"/>
+
+  <!-- 头部标题 -->
+  <g transform="translate(40, 24)">
+    <rect x="0" y="0" width="8" height="38" rx="4" fill="#38bdf8"/>
+    <text x="20" y="22" fill="#f8fafc" font-size="19" font-weight="700" font-family="system-ui, -apple-system, sans-serif">
+      ZenOPC 个人商业模式画布 (Personal Business Model Canvas)
+    </text>
+    <text x="20" y="40" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+      超级个体九宫格商业设计架构 · 将个人优势封装为高利润、自运转的轻量商业系统
+    </text>
+    <rect x="760" y="4" width="200" height="28" rx="14" fill="#0369a1" fill-opacity="0.3" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="860" y="22" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+      一人公司系统化骨架
+    </text>
+  </g>
+
+  <!-- 画布主体 9 宫格区 (高度 440) -->
+  <!-- 1. 关键合作伙伴 (左1 全高一半) -->
+  <g transform="translate(40, 85)" filter="url(#pbmcShadow)">
+    <rect width="176" height="340" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1.2"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#64748b"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">08</text>
+    <text x="44" y="27" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui, sans-serif">关键合作伙伴</text>
+    <text x="12" y="48" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">Key Partners (谁帮我)</text>
+
+    <!-- 卡片内容 -->
+    <rect x="12" y="60" width="152" height="75" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#93c5fd" font-size="11" font-weight="600">🤝 互补领域同盟</text>
+    <text x="20" y="98" fill="#94a3b8" font-size="10">• 异业同客群互推</text>
+    <text x="20" y="114" fill="#94a3b8" font-size="10">• 联合举办线上专场</text>
+
+    <rect x="12" y="145" width="152" height="75" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="165" fill="#a78bfa" font-size="11" font-weight="600">🤖 AI 与无头工具链</text>
+    <text x="20" y="183" fill="#94a3b8" font-size="10">• LLM 核心推理引擎</text>
+    <text x="20" y="199" fill="#94a3b8" font-size="10">• Make/n8n 自动化管道</text>
+
+    <rect x="12" y="230" width="152" height="95" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="250" fill="#34d399" font-size="11" font-weight="600">👥 早期天使客户</text>
+    <text x="20" y="268" fill="#94a3b8" font-size="10">• 首批 10 个种子客户</text>
+    <text x="20" y="284" fill="#94a3b8" font-size="10">• 提供真实背书证言</text>
+    <text x="20" y="300" fill="#94a3b8" font-size="10">• 转介绍裂变推荐人</text>
+  </g>
+
+  <!-- 2. 关键业务 (左2 上半) -->
+  <g transform="translate(224, 85)" filter="url(#pbmcShadow)">
+    <rect width="176" height="165" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1.2"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#64748b"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">07</text>
+    <text x="44" y="27" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui, sans-serif">关键业务</text>
+    <text x="12" y="48" fill="#64748b" font-size="10">Key Activities (我做什么)</text>
+
+    <rect x="12" y="60" width="152" height="92" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#cbd5e1" font-size="10">• 每周深耕 1 篇母舰长文</text>
+    <text x="20" y="98" fill="#cbd5e1" font-size="10">• 1对1 医生问诊式沟通</text>
+    <text x="20" y="116" fill="#cbd5e1" font-size="10">• 异步标准化履约交付</text>
+    <text x="20" y="134" fill="#cbd5e1" font-size="10">• 资产迭代与Prompt封装</text>
+  </g>
+
+  <!-- 3. 核心资产 (左2 下半) -->
+  <g transform="translate(224, 260)" filter="url(#pbmcShadow)">
+    <rect width="176" height="165" rx="10" fill="url(#gKr)" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#6366f1"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">06</text>
+    <text x="44" y="27" fill="#c7d2fe" font-size="13" font-weight="700" font-family="system-ui, sans-serif">核心资产</text>
+    <text x="12" y="48" fill="#64748b" font-size="10">Key Resources (我拥有)</text>
+
+    <rect x="12" y="60" width="152" height="92" rx="6" fill="#0f172a" stroke="#312e81" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#e0e7ff" font-size="10">• 个人隐性暗知识与经验</text>
+    <text x="20" y="98" fill="#e0e7ff" font-size="10">• 常青数字资产与知识库</text>
+    <text x="20" y="116" fill="#e0e7ff" font-size="10">• 垂直私域精准信任池</text>
+    <text x="20" y="134" fill="#e0e7ff" font-size="10">• 个人防伪立场与声誉</text>
+  </g>
+
+  <!-- 4. 价值主张 (中核心 枢纽全高) -->
+  <g transform="translate(408, 85)" filter="url(#pbmcShadow)">
+    <rect width="184" height="340" rx="10" fill="url(#gVp)" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#0284c7"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">02</text>
+    <text x="44" y="27" fill="#38bdf8" font-size="14" font-weight="700" font-family="system-ui, sans-serif">价值主张</text>
+    <text x="12" y="48" fill="#7dd3fc" font-size="10">Value Propositions (我给什么)</text>
+
+    <rect x="12" y="60" width="160" height="85" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1"/>
+    <text x="20" y="80" fill="#bae6fd" font-size="11" font-weight="700">🎯 确定性结果承诺</text>
+    <text x="20" y="98" fill="#94a3b8" font-size="10">• 72小时极速见效破局点</text>
+    <text x="20" y="114" fill="#94a3b8" font-size="10">• 消除试错痛苦与摸索</text>
+    <text x="20" y="130" fill="#94a3b8" font-size="10">• 身份跃迁与明确指标</text>
+
+    <rect x="12" y="155" width="160" height="80" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1"/>
+    <text x="20" y="175" fill="#38bdf8" font-size="11" font-weight="700">📦 大满贯 Offer 组合</text>
+    <text x="20" y="193" fill="#94a3b8" font-size="10">• 核心解决方案交付</text>
+    <text x="20" y="209" fill="#94a3b8" font-size="10">• 解决次生阻力赠品包</text>
+    <text x="20" y="225" fill="#94a3b8" font-size="10">• 100% 反向风险对赌</text>
+
+    <rect x="12" y="245" width="160" height="80" rx="6" fill="#0f172a" stroke="#0369a1" stroke-width="1"/>
+    <text x="20" y="265" fill="#67e8f9" font-size="11" font-weight="700">⚡ 极简轻量形态</text>
+    <text x="20" y="283" fill="#94a3b8" font-size="10">• 单页活页夹/自检模版</text>
+    <text x="20" y="299" fill="#94a3b8" font-size="10">• 15分钟录屏逐行把关</text>
+    <text x="20" y="315" fill="#94a3b8" font-size="10">• DWY 带着做避免烂尾</text>
+  </g>
+
+  <!-- 5. 客户关系 (右2 上半) -->
+  <g transform="translate(600, 85)" filter="url(#pbmcShadow)">
+    <rect width="176" height="165" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1.2"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#64748b"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">04</text>
+    <text x="44" y="27" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui, sans-serif">客户关系</text>
+    <text x="12" y="48" fill="#64748b" font-size="10">Relationships (怎样连接)</text>
+
+    <rect x="12" y="60" width="152" height="92" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#cbd5e1" font-size="10">• 专科门诊预约制心智</text>
+    <text x="20" y="98" fill="#cbd5e1" font-size="10">• 异步沟通契约 (防打碎)</text>
+    <text x="20" y="116" fill="#cbd5e1" font-size="10">• 专属 Notion Portal</text>
+    <text x="20" y="134" fill="#cbd5e1" font-size="10">• 第7天黄金好评与复购</text>
+  </g>
+
+  <!-- 6. 触达渠道 (右2 下半) -->
+  <g transform="translate(600, 260)" filter="url(#pbmcShadow)">
+    <rect width="176" height="165" rx="10" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1.2"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#64748b"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">03</text>
+    <text x="44" y="27" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui, sans-serif">触达渠道</text>
+    <text x="12" y="48" fill="#64748b" font-size="10">Channels (怎样触达)</text>
+
+    <rect x="12" y="60" width="152" height="92" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#cbd5e1" font-size="10">• 单母舰：公众号深度长文</text>
+    <text x="20" y="98" fill="#cbd5e1" font-size="10">• 单探针：小红书/知乎获客</text>
+    <text x="20" y="116" fill="#cbd5e1" font-size="10">• 钩子池：自测表/计算器</text>
+    <text x="20" y="134" fill="#cbd5e1" font-size="10">• 极窄微信：1对1咨询成交</text>
+  </g>
+
+  <!-- 7. 客户细分 (右1 全高一半) -->
+  <g transform="translate(784, 85)" filter="url(#pbmcShadow)">
+    <rect width="176" height="340" rx="10" fill="url(#gCs)" stroke="#0d9488" stroke-width="1.2"/>
+    <rect x="12" y="12" width="24" height="20" rx="4" fill="#0d9488"/>
+    <text x="24" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">01</text>
+    <text x="44" y="27" fill="#5eead4" font-size="13" font-weight="700" font-family="system-ui, sans-serif">客户细分</text>
+    <text x="12" y="48" fill="#2dd4bf" font-size="10">Customer Segments (我帮谁)</text>
+
+    <rect x="12" y="60" width="152" height="75" rx="6" fill="#0f172a" stroke="#134e4a" stroke-width="0.8"/>
+    <text x="20" y="80" fill="#99f6e4" font-size="11" font-weight="600">🎯 极窄垂直利基 (Who)</text>
+    <text x="20" y="98" fill="#94a3b8" font-size="10">• 手握预算的关键决策人</text>
+    <text x="20" y="114" fill="#94a3b8" font-size="10">• 拒绝穷幼老弱泛泛人群</text>
+
+    <rect x="12" y="145" width="152" height="75" rx="6" fill="#0f172a" stroke="#134e4a" stroke-width="0.8"/>
+    <text x="20" y="165" fill="#99f6e4" font-size="11" font-weight="600">🩸 凌晨两点痛点 (Pain)</text>
+    <text x="20" y="183" fill="#94a3b8" font-size="10">• 72小时不解决会流血</text>
+    <text x="20" y="199" fill="#94a3b8" font-size="10">• 止痛药而非维生素需求</text>
+
+    <rect x="12" y="230" width="152" height="95" rx="6" fill="#0f172a" stroke="#134e4a" stroke-width="0.8"/>
+    <text x="20" y="250" fill="#99f6e4" font-size="11" font-weight="600">👤 卖给两年前的自己</text>
+    <text x="20" y="268" fill="#94a3b8" font-size="10">• 领先两步的先锋向导</text>
+    <text x="20" y="284" fill="#94a3b8" font-size="10">• 真实踩坑与脱困路径</text>
+    <text x="20" y="300" fill="#94a3b8" font-size="10">• 极度同频的同路人</text>
+  </g>
+
+  <!-- 底部双板块：成本结构 (左半) 与 收入来源 (右半) -->
+  <!-- 8. 成本结构 -->
+  <g transform="translate(40, 435)" filter="url(#pbmcShadow)">
+    <rect width="456" height="145" rx="10" fill="url(#gCost)" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="12" width="24" height="20" rx="4" fill="#d97706"/>
+    <text x="26" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">09</text>
+    <text x="46" y="27" fill="#fde68a" font-size="13" font-weight="700" font-family="system-ui, sans-serif">成本结构 (极度精简)</text>
+    <text x="14" y="46" fill="#94a3b8" font-size="10">Cost Structure (固定支出 &lt; 5%)</text>
+
+    <g transform="translate(14, 58)">
+      <rect x="0" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#78350f" stroke-width="0.8"/>
+      <text x="10" y="20" fill="#fbbf24" font-size="11" font-weight="600">💻 SaaS 极简订阅</text>
+      <text x="10" y="38" fill="#94a3b8" font-size="10">• LLM API: ¥100~300/月</text>
+      <text x="10" y="54" fill="#94a3b8" font-size="10">• 域名/Notion: ¥50/月</text>
+
+      <rect x="146" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#78350f" stroke-width="0.8"/>
+      <text x="156" y="20" fill="#fbbf24" font-size="11" font-weight="600">⚙️ 边际交付成本</text>
+      <text x="156" y="38" fill="#94a3b8" font-size="10">• 模版复用率 &gt; 70%</text>
+      <text x="156" y="54" fill="#94a3b8" font-size="10">• 每客工时 ≤ 1.5 小时</text>
+
+      <rect x="292" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#78350f" stroke-width="0.8"/>
+      <text x="302" y="20" fill="#fbbf24" font-size="11" font-weight="600">🛡️ 财税与储备金</text>
+      <text x="302" y="38" fill="#94a3b8" font-size="10">• 税务拨备: 15%</text>
+      <text x="302" y="54" fill="#94a3b8" font-size="10">• 安全垫储备: 6个月</text>
+    </g>
+  </g>
+
+  <!-- 9. 收入来源 -->
+  <g transform="translate(504, 435)" filter="url(#pbmcShadow)">
+    <rect width="456" height="145" rx="10" fill="url(#gRev)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="12" width="24" height="20" rx="4" fill="#059669"/>
+    <text x="26" y="26" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">05</text>
+    <text x="46" y="27" fill="#6ee7b7" font-size="13" font-weight="700" font-family="system-ui, sans-serif">收入来源 (阶梯产品矩阵)</text>
+    <text x="14" y="46" fill="#94a3b8" font-size="10">Revenue Streams (高毛利现金流引擎)</text>
+
+    <g transform="translate(14, 58)">
+      <rect x="0" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#064e3b" stroke-width="0.8"/>
+      <text x="10" y="20" fill="#34d399" font-size="11" font-weight="600">L1/L2 尝鲜产品</text>
+      <text x="10" y="38" fill="#94a3b8" font-size="10">• L1 引流钩子: ¥0</text>
+      <text x="10" y="54" fill="#94a3b8" font-size="10">• L2 工具包: ¥99~299</text>
+
+      <rect x="146" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#064e3b" stroke-width="0.8"/>
+      <text x="156" y="20" fill="#34d399" font-size="11" font-weight="600">L3 核心旗舰 Offer ⭐</text>
+      <text x="156" y="38" fill="#94a3b8" font-size="10">• 价值陪跑: ¥1999~4999</text>
+      <text x="156" y="54" fill="#94a3b8" font-size="10">• 贡献 70% 业务利润</text>
+
+      <rect x="292" y="0" width="136" height="70" rx="6" fill="#0f172a" stroke="#064e3b" stroke-width="0.8"/>
+      <text x="302" y="20" fill="#34d399" font-size="11" font-weight="600">L4 高端定制咨询</text>
+      <text x="302" y="38" fill="#94a3b8" font-size="10">• 专属顾问: ¥8000~30000</text>
+      <text x="302" y="54" fill="#94a3b8" font-size="10">• 单月 1~2 单覆盖开销</text>
+    </g>
+  </g>
+</svg>

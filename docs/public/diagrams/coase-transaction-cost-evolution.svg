@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="coase-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C15" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="coase-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+
+    <linearGradient id="corp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="opc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="url(#coase-bg)" />
+  <rect width="1000" height="620" fill="url(#coase-grid)" />
+
+  <!-- 头部说明 -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="165" height="24" rx="12" fill="rgba(168, 85, 247, 0.15)" stroke="#A855F7" stroke-width="1" />
+    <text x="82" y="16" fill="#C084FC" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">COASE THEOREM</text>
+    <text x="180" y="18" fill="#F8FAFC" font-size="22" font-weight="800" font-family="system-ui, sans-serif">科斯交易成本演进：为什么一人公司时代不可阻挡？</text>
+    <text x="0" y="44" fill="#94A3B8" font-size="13" font-family="system-ui, sans-serif">当外部协作、分发与 AI 生产工具的交易成本趋近于零时，庞大的科层制企业将瓦解为敏捷的超级个体网络。</text>
+  </g>
+
+  <!-- 两阶段演进大卡片 -->
+  <!-- 阶段 1：工业时代（1900-2010） -->
+  <g transform="translate(50, 125)">
+    <rect x="0" y="0" width="430" height="395" rx="16" fill="url(#corp-grad)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
+    
+    <!-- 头部阶段标签 -->
+    <g transform="translate(24, 24)">
+      <rect x="0" y="0" width="140" height="24" rx="6" fill="rgba(100, 116, 139, 0.2)" stroke="#64748B" stroke-width="1" />
+      <text x="70" y="16" fill="#94A3B8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">工业时代：科层制巨头</text>
+      <text x="0" y="48" fill="#F1F5F9" font-size="17" font-weight="bold" font-family="system-ui, sans-serif">交易成本 (Ct) &gt; 内部管理成本 (Co)</text>
+      <text x="0" y="68" fill="#64748B" font-size="12" font-family="system-ui, sans-serif">由于外部搜寻、信息不对称成本极高，组建大公司是唯一解</text>
+    </g>
+
+    <!-- 视觉架构：金字塔层级 -->
+    <g transform="translate(65, 115)">
+      <!-- 顶层 CEO -->
+      <rect x="100" y="0" width="100" height="34" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1" />
+      <text x="150" y="21" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">董事会 / CEO</text>
+      <line x1="150" y1="34" x2="150" y2="48" stroke="#64748B" stroke-width="1.5" />
+
+      <!-- 中层管理者 -->
+      <line x1="50" y1="48" x2="250" y2="48" stroke="#64748B" stroke-width="1.5" />
+      <line x1="50" y1="48" x2="50" y2="58" stroke="#64748B" stroke-width="1.5" />
+      <line x1="150" y1="48" x2="150" y2="58" stroke="#64748B" stroke-width="1.5" />
+      <line x1="250" y1="48" x2="250" y2="58" stroke="#64748B" stroke-width="1.5" />
+
+      <rect x="10" y="58" width="80" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="50" y="77" fill="#CBD5E1" font-size="11" text-anchor="middle">部门总监</text>
+      <rect x="110" y="58" width="80" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="150" y="77" fill="#CBD5E1" font-size="11" text-anchor="middle">项目经理</text>
+      <rect x="210" y="58" width="80" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="250" y="77" fill="#CBD5E1" font-size="11" text-anchor="middle">运营主管</text>
+
+      <!-- 底层螺丝钉 -->
+      <line x1="150" y1="88" x2="150" y2="102" stroke="#64748B" stroke-width="1.5" />
+      <rect x="0" y="102" width="300" height="32" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="150" y="122" fill="#94A3B8" font-size="11" text-anchor="middle">基层员工、产线工人、跨部门拉扯与层层汇报</text>
+    </g>
+
+    <!-- 痛点归纳 -->
+    <g transform="translate(24, 275)">
+      <line x1="0" y1="0" x2="382" y2="0" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="0" y="24" fill="#EF4444" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">❌ 传统组织困境：</text>
+      <text x="0" y="46" fill="#94A3B8" font-size="12" font-family="system-ui, sans-serif">• 沟通成本剧增：每天消耗在对齐、周报、审批上的时间超过 50%</text>
+      <text x="0" y="68" fill="#94A3B8" font-size="12" font-family="system-ui, sans-serif">• 个人价值被稀释：员工只拥有单一螺丝钉技能，丧失完整商业闭环</text>
+      <text x="0" y="90" fill="#94A3B8" font-size="12" font-family="system-ui, sans-serif">• 组织臃肿：人浮于事，抗风险能力弱，裁员危机随时爆发</text>
+    </g>
+  </g>
+
+  <!-- 中间连接演进箭头 -->
+  <g transform="translate(485, 305)">
+    <circle cx="15" cy="15" r="22" fill="#1E293B" stroke="#A855F7" stroke-width="1.5" />
+    <path d="M 10 15 L 20 15 M 16 10 L 21 15 L 16 20" fill="none" stroke="#C084FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 阶段 2：AI+网络智能时代（2025+） -->
+  <g transform="translate(520, 125)">
+    <rect x="0" y="0" width="430" height="395" rx="16" fill="url(#opc-grad)" stroke="#0EA5E9" stroke-width="1.5" />
+    
+    <!-- 头部阶段标签 -->
+    <g transform="translate(24, 24)">
+      <rect x="0" y="0" width="165" height="24" rx="6" fill="rgba(14, 165, 233, 0.2)" stroke="#0EA5E9" stroke-width="1" />
+      <text x="82" y="16" fill="#38BDF8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">✨ AI时代：一人公司集群</text>
+      <text x="0" y="48" fill="#F8FAFC" font-size="17" font-weight="bold" font-family="system-ui, sans-serif">交易成本 (Ct ≈ 0) &lt; 内部管理成本 (Co)</text>
+      <text x="0" y="68" fill="#7DD3FC" font-size="12" font-family="system-ui, sans-serif">AI、云原生基础设施与全球协议，让单兵拥有集团军级火力</text>
+    </g>
+
+    <!-- 视觉架构：星型/网络型超级个体 -->
+    <g transform="translate(40, 115)">
+      <!-- 核心主体：一人公司创始人 -->
+      <circle cx="175" cy="65" r="38" fill="#0284C7" stroke="#38BDF8" stroke-width="2" />
+      <text x="175" y="60" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">OPC 创始人</text>
+      <text x="175" y="76" fill="#BAE6FD" font-size="10" text-anchor="middle">决策·IP·战略</text>
+
+      <!-- 四周卫星环绕节点 -->
+      <!-- 左上：AI Agent 矩阵 -->
+      <rect x="10" y="5" width="95" height="30" rx="6" fill="#1E293B" stroke="#38BDF8" stroke-width="1" />
+      <text x="57" y="24" fill="#E2E8F0" font-size="10" text-anchor="middle">🤖 AI Agent 研发</text>
+      <line x1="105" y1="20" x2="140" y2="45" stroke="#38BDF8" stroke-dasharray="3,3" stroke-width="1" />
+
+      <!-- 右上：全球支付与云 -->
+      <rect x="245" y="5" width="95" height="30" rx="6" fill="#1E293B" stroke="#34D399" stroke-width="1" />
+      <text x="292" y="24" fill="#E2E8F0" font-size="10" text-anchor="middle">💳 Stripe/全球支付</text>
+      <line x1="245" y1="20" x2="210" y2="45" stroke="#34D399" stroke-dasharray="3,3" stroke-width="1" />
+
+      <!-- 左下：内容自动分发 -->
+      <rect x="10" y="95" width="95" height="30" rx="6" fill="#1E293B" stroke="#C084FC" stroke-width="1" />
+      <text x="57" y="114" fill="#E2E8F0" font-size="10" text-anchor="middle">📢 全网媒体矩阵</text>
+      <line x1="105" y1="110" x2="140" y2="85" stroke="#C084FC" stroke-dasharray="3,3" stroke-width="1" />
+
+      <!-- 右下：异步交付与社群 -->
+      <rect x="245" y="95" width="95" height="30" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="1" />
+      <text x="292" y="114" fill="#E2E8F0" font-size="10" text-anchor="middle">⚡ 模块化服务生态</text>
+      <line x1="245" y1="110" x2="210" y2="85" stroke="#F59E0B" stroke-dasharray="3,3" stroke-width="1" />
+    </g>
+
+    <!-- 优势归纳 -->
+    <g transform="translate(24, 275)">
+      <line x1="0" y1="0" x2="382" y2="0" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="0" y="24" fill="#38BDF8" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">🚀 一人公司新范式：</text>
+      <text x="0" y="46" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 零管理内耗：没有无意义会议，100% 精力投入在客户与产品上</text>
+      <text x="0" y="68" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 极高毛利（80%+）：无需承担大额租金与人力包袱，现金流极其健康</text>
+      <text x="0" y="90" fill="#E2E8F0" font-size="12" font-family="system-ui, sans-serif">• 全球化抗脆弱：面向全球细分微利基市场，成为自由可复利的数字企业</text>
+    </g>
+  </g>
+
+  <!-- 底部关键推论金句条 -->
+  <g transform="translate(50, 540)">
+    <rect x="0" y="0" width="900" height="52" rx="12" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1" />
+    <text x="24" y="31" fill="#C084FC" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">科斯洞察：</text>
+    <text x="95" y="31" fill="#F1F5F9" font-size="13" font-family="system-ui, sans-serif">“未来最赚钱的公司，不是拥有成千上万员工的传统巨无霸，而是单人掌控智能流水线的超级个体公司。”</text>
+    <text x="860" y="31" fill="#64748B" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">ZenOPC Architecture</text>
+  </g>
+</svg>

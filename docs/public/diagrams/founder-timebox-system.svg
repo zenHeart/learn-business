@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="time-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090E17" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#05070E" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="time-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+
+    <!-- 4 大时段渐变 -->
+    <linearGradient id="deep-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="delivery-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="sys-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3B0764" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="rest-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="url(#time-bg)" />
+  <rect width="1000" height="620" fill="url(#time-grid)" />
+
+  <!-- 顶部主标题 -->
+  <g transform="translate(50, 42)">
+    <rect x="0" y="0" width="165" height="24" rx="12" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1" />
+    <text x="82" y="16" fill="#38BDF8" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">TIMEBOX &amp; ENERGY</text>
+    <text x="180" y="18" fill="#F8FAFC" font-size="22" font-weight="800" font-family="system-ui, sans-serif">一人公司创始人时间盒与生物精力管理系统</text>
+    <text x="0" y="44" fill="#94A3B8" font-size="13" font-family="system-ui, sans-serif">杜绝“全天在线却一事无成”：将碎片化应付转变为模块化时段作战，保护最值钱的高阶认知心流。</text>
+  </g>
+
+  <!-- 四大时间盒大卡片横排 (总宽 900, 每个 210, 间距 20) -->
+  <g transform="translate(50, 115)">
+    <!-- 时间盒 1：上午深度创作 (08:30 - 11:30) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="210" height="380" rx="14" fill="url(#deep-grad)" stroke="#38BDF8" stroke-width="1.5" />
+      <circle cx="28" cy="28" r="14" fill="rgba(56, 189, 248, 0.2)" />
+      <text x="28" y="34" fill="#38BDF8" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+      <text x="50" y="33" fill="#38BDF8" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">08:30 - 11:30 (3h)</text>
+      <text x="14" y="65" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">深度资产创作区</text>
+      <text x="14" y="85" fill="#7DD3FC" font-size="11" font-family="system-ui, sans-serif">Deep Work / 核心杠杆</text>
+      <line x1="14" y1="98" x2="196" y2="98" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="125" fill="#E2E8F0" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🎯 核心目标：</text>
+      <text x="14" y="145" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 编写高价值长文/专栏</text>
+      <text x="14" y="165" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 录制核心课程与案例视频</text>
+      <text x="14" y="185" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 编写数字化产品/代码模块</text>
+      <text x="14" y="220" fill="#38BDF8" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🔒 执行守则：</text>
+      <text x="14" y="240" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 手机开启勿扰/飞行模式</text>
+      <text x="14" y="260" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 严禁回复任何微信和邮件</text>
+      <text x="14" y="280" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 必须在脑力巅峰完成 1 件大事</text>
+      <rect x="14" y="325" width="182" height="34" rx="6" fill="rgba(56, 189, 248, 0.2)" stroke="#38BDF8" stroke-width="1" />
+      <text x="105" y="346" fill="#BAE6FD" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">🛡️ 产出永久可复利资产</text>
+    </g>
+
+    <!-- 时间盒 2：下午交付与连接 (13:30 - 15:30) -->
+    <g transform="translate(230, 0)">
+      <rect x="0" y="0" width="210" height="380" rx="14" fill="url(#delivery-grad)" stroke="#10B981" stroke-width="1.5" />
+      <circle cx="28" cy="28" r="14" fill="rgba(16, 185, 129, 0.2)" />
+      <text x="28" y="34" fill="#34D399" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+      <text x="50" y="33" fill="#34D399" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">13:30 - 15:30 (2h)</text>
+      <text x="14" y="65" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">高能交付与连接区</text>
+      <text x="14" y="85" fill="#6EE7B7" font-size="11" font-family="system-ui, sans-serif">Client Care / 批处理沟通</text>
+      <line x1="14" y1="98" x2="196" y2="98" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="125" fill="#E2E8F0" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🎯 核心目标：</text>
+      <text x="14" y="145" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 预约制 1对1 专家门诊</text>
+      <text x="14" y="165" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 私聊线索跟进与无痛成交</text>
+      <text x="14" y="185" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 集中回复客户答疑工单</text>
+      <text x="14" y="220" fill="#10B981" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🔒 执行守则：</text>
+      <text x="14" y="240" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 每天最多排 2 场咨询</text>
+      <text x="14" y="260" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 实施异步沟通契约</text>
+      <text x="14" y="280" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 坚决不随叫随到、秒回消息</text>
+      <rect x="14" y="325" width="182" height="34" rx="6" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="1" />
+      <text x="105" y="346" fill="#A7F3D0" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">⚡ 高满意度闭环交付</text>
+    </g>
+
+    <!-- 时间盒 3：傍晚系统与自动化 (16:00 - 17:30) -->
+    <g transform="translate(460, 0)">
+      <rect x="0" y="0" width="210" height="380" rx="14" fill="url(#sys-grad)" stroke="#C084FC" stroke-width="1.5" />
+      <circle cx="28" cy="28" r="14" fill="rgba(168, 85, 247, 0.2)" />
+      <text x="28" y="34" fill="#C084FC" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+      <text x="50" y="33" fill="#C084FC" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">16:00 - 17:30 (1.5h)</text>
+      <text x="14" y="65" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">系统升级与自动化</text>
+      <text x="14" y="85" fill="#E9D5FF" font-size="11" font-family="system-ui, sans-serif">System / 磨刀打磨</text>
+      <line x1="14" y1="98" x2="196" y2="98" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="125" fill="#E2E8F0" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🎯 核心目标：</text>
+      <text x="14" y="145" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 优化 AI Agent 提示词模板</text>
+      <text x="14" y="165" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 迭代自动化引流与同步脚本</text>
+      <text x="14" y="185" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 盘点单页经营仪表盘数据</text>
+      <text x="14" y="220" fill="#C084FC" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🔒 执行守则：</text>
+      <text x="14" y="240" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 任何重复做 3 次的事都自动化</text>
+      <text x="14" y="260" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 优化流程，下周节省 2 小时</text>
+      <text x="14" y="280" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 记录今日 1 条经营得失</text>
+      <rect x="14" y="325" width="182" height="34" rx="6" fill="rgba(168, 85, 247, 0.2)" stroke="#C084FC" stroke-width="1" />
+      <text x="105" y="346" fill="#F3E8FF" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">⚙️ 打造睡后运转流水线</text>
+    </g>
+
+    <!-- 时间盒 4：晚间恢复与边界 (18:00+) -->
+    <g transform="translate(690, 0)">
+      <rect x="0" y="0" width="210" height="380" rx="14" fill="url(#rest-grad)" stroke="#94A3B8" stroke-width="1.5" />
+      <circle cx="28" cy="28" r="14" fill="rgba(148, 163, 184, 0.2)" />
+      <text x="28" y="34" fill="#E2E8F0" font-size="13" font-weight="bold" text-anchor="middle">4</text>
+      <text x="50" y="33" fill="#94A3B8" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">18:00 - 23:00 (Off)</text>
+      <text x="14" y="65" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">断电充电与身心滋养</text>
+      <text x="14" y="85" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">Recharge / 生存边界</text>
+      <line x1="14" y1="98" x2="196" y2="98" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="125" fill="#E2E8F0" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🎯 核心目标：</text>
+      <text x="14" y="145" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 力量训练 / 慢跑 45 分钟</text>
+      <text x="14" y="165" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 与家人共进晚餐、陪伴沟通</text>
+      <text x="14" y="185" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 纸质书阅读 / 8 小时高质量深度睡眠</text>
+      <text x="14" y="220" fill="#94A3B8" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">🔒 执行守则：</text>
+      <text x="14" y="240" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 电脑关机，绝不睡前看报表</text>
+      <text x="14" y="260" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 身体是唯一的无形固定资产</text>
+      <text x="14" y="280" fill="#94A3B8" font-size="11" font-family="system-ui, sans-serif">• 拒绝用慢性消耗换短期假勤奋</text>
+      <rect x="14" y="325" width="182" height="34" rx="6" fill="rgba(148, 163, 184, 0.2)" stroke="#94A3B8" stroke-width="1" />
+      <text x="105" y="346" fill="#F1F5F9" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">🔋 创始人活力持久续航</text>
+    </g>
+  </g>
+
+  <!-- 底部关键总结 -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="900" height="60" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="24" y="35" fill="#38BDF8" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">精力铁律：</text>
+    <text x="95" y="35" fill="#F1F5F9" font-size="13" font-family="system-ui, sans-serif">“一人公司的产能上限不是工时，而是清醒高能状态下的决策质量。每天只要保护好 3 小时深度心流，胜过传统打工 12 小时的疲劳战。”</text>
+    <text x="860" y="35" fill="#64748B" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">ZenOPC Architecture</text>
+  </g>
+</svg>

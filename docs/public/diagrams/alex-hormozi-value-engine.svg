@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+SC:wght@400;600;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'PingFang SC', 'Noto Sans SC', sans-serif; }
+      .header-title { font-size: 18px; font-weight: 700; fill: #ffffff; }
+      .header-sub { font-size: 11px; fill: #94a3b8; }
+      .eq-label { font-size: 13px; font-weight: 700; }
+      .card-title { font-size: 12px; font-weight: 700; fill: #ffffff; }
+      .card-desc { font-size: 10px; fill: #94a3b8; }
+    </style>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0f172a" rx="12"/>
+  <rect width="100%" height="100%" fill="url(#grid2)" rx="12"/>
+
+  <!-- Title Block -->
+  <g transform="translate(40, 40)">
+    <rect x="-10" y="-18" width="6" height="36" fill="#fbbf24" rx="2"/>
+    <text x="6" y="0" class="header-title">Alex Hormozi 价值工程力场与大满贯 Offer 架构</text>
+    <text x="6" y="18" class="header-sub">把心理感知价值推向无穷大 · 消除客户决策阻力的定价底层物理学</text>
+  </g>
+
+  <!-- Value Equation Visual Board -->
+  <!-- Left: Target Value -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="150" height="230" rx="8" fill="#0f172a"/>
+    <rect x="0" y="0" width="150" height="230" rx="8" fill="rgba(120, 53, 15, 0.4)" stroke="#fbbf24" stroke-width="2"/>
+    <text x="75" y="45" text-anchor="middle" font-size="12" fill="#fbbf24" font-weight="700">感知价值</text>
+    <text x="75" y="85" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="800">VALUE</text>
+    <text x="75" y="125" text-anchor="middle" font-size="28" fill="#fbbf24" font-weight="800">↑ ↑ ↑</text>
+    <text x="75" y="160" text-anchor="middle" font-size="11" fill="#94a3b8">目标：推向极大</text>
+    <text x="75" y="180" text-anchor="middle" font-size="10" fill="#34d399" font-weight="600">产生极高定价空间</text>
+    <text x="75" y="200" text-anchor="middle" font-size="10" fill="#38bdf8">摆脱成本比价陷阱</text>
+  </g>
+
+  <!-- Big Equal Sign -->
+  <text x="215" y="235" font-size="32" fill="#ffffff" font-weight="700">=</text>
+
+  <!-- Right: The Fraction -->
+  <g transform="translate(250, 110)">
+    <!-- Numerator Box (Top) -->
+    <rect x="0" y="0" width="680" height="105" rx="8" fill="#0f172a"/>
+    <rect x="0" y="0" width="680" height="105" rx="8" fill="rgba(6, 78, 59, 0.35)" stroke="#34d399" stroke-width="1.5"/>
+    
+    <!-- Numerator 1: Dream Outcome -->
+    <g transform="translate(20, 15)">
+      <rect x="0" y="0" width="310" height="75" rx="6" fill="rgba(30, 41, 59, 0.6)" stroke="#34d399" stroke-width="1"/>
+      <text x="15" y="24" class="eq-label" fill="#34d399">① 梦想结果 (Dream Outcome) ↑</text>
+      <text x="15" y="44" class="card-desc">• 贩卖身份跃迁与明确指标，拒绝功能清单</text>
+      <text x="15" y="60" class="card-desc">• 范例：“下周顺利通过考核”而非“8节视频课”</text>
+    </g>
+
+    <!-- Multiplication Sign -->
+    <text x="345" y="58" font-size="20" fill="#34d399" font-weight="700">×</text>
+
+    <!-- Numerator 2: Likelihood -->
+    <g transform="translate(365, 15)">
+      <rect x="0" y="0" width="295" height="75" rx="6" fill="rgba(30, 41, 59, 0.6)" stroke="#34d399" stroke-width="1"/>
+      <text x="15" y="24" class="eq-label" fill="#34d399">② 达成确定性 (Likelihood) ↑</text>
+      <text x="15" y="44" class="card-desc">• 消除客户“付了钱还是做不到”的恐惧</text>
+      <text x="15" y="60" class="card-desc">• 武器：同类素人见证 + 分步里程碑 + 反向对赌</text>
+    </g>
+
+    <!-- Fraction Divider Bar -->
+    <line x1="0" y1="115" x2="680" y2="115" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Denominator Box (Bottom) -->
+    <rect x="0" y="125" width="680" height="105" rx="8" fill="#0f172a"/>
+    <rect x="0" y="125" width="680" height="105" rx="8" fill="rgba(136, 19, 55, 0.35)" stroke="#fb7185" stroke-width="1.5"/>
+
+    <!-- Denominator 1: Time Delay -->
+    <g transform="translate(20, 140)">
+      <rect x="0" y="0" width="310" height="75" rx="6" fill="rgba(30, 41, 59, 0.6)" stroke="#fb7185" stroke-width="1"/>
+      <text x="15" y="24" class="eq-label" fill="#fb7185">③ 时间延迟 (Time Delay) ↓</text>
+      <text x="15" y="44" class="card-desc">• 消除漫长等待带来的弃单焦虑</text>
+      <text x="15" y="60" class="card-desc">• 武器：72小时极速破局点 (Quick Win)，首周见效</text>
+    </g>
+
+    <!-- Multiplication Sign -->
+    <text x="345" y="183" font-size="20" fill="#fb7185" font-weight="700">×</text>
+
+    <!-- Denominator 2: Effort & Sacrifice -->
+    <g transform="translate(365, 140)">
+      <rect x="0" y="0" width="295" height="75" rx="6" fill="rgba(30, 41, 59, 0.6)" stroke="#fb7185" stroke-width="1"/>
+      <text x="15" y="24" class="eq-label" fill="#fb7185">④ 努力与牺牲 (Effort &amp; Sacrifice) ↓</text>
+      <text x="15" y="44" class="card-desc">• 从低价 DIY 升级为高价 DWY / DFY</text>
+      <text x="15" y="60" class="card-desc">• 武器：提供现成模版/SOP，替客户做掉 80% 脏活</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Grand Slam Offer Stack -->
+  <g transform="translate(40, 370)">
+    <rect x="0" y="0" width="920" height="175" rx="8" fill="#0f172a"/>
+    <rect x="0" y="0" width="920" height="175" rx="8" fill="rgba(8, 51, 68, 0.4)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="24" y="28" font-size="13" fill="#38bdf8" font-weight="700">大满贯 Offer (Grand Slam Offer) 落地四件套实操架构</text>
+    <text x="24" y="44" font-size="10" fill="#94a3b8">把解决方案组合包装为“客户不买就会觉得自己是个傻子”的不可拒绝要约</text>
+
+    <!-- Component 1 -->
+    <g transform="translate(24, 60)">
+      <rect x="0" y="0" width="200" height="95" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="12" y="24" font-size="11" fill="#38bdf8" font-weight="700">1. 核心标准化方案</text>
+      <text x="12" y="44" class="card-desc">• 清晰的结果承诺边界</text>
+      <text x="12" y="60" class="card-desc">• DWY/DFY 混合轻量交付</text>
+      <text x="12" y="76" class="card-desc">• 杜绝无休止的定制需求蔓延</text>
+    </g>
+
+    <!-- Component 2 -->
+    <g transform="translate(244, 60)">
+      <rect x="0" y="0" width="205" height="95" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+      <text x="12" y="24" font-size="11" fill="#fbbf24" font-weight="700">2. 赠品堆叠包 (Bonus)</text>
+      <text x="12" y="44" class="card-desc">• 专门解决执行过程中的次生卡点</text>
+      <text x="12" y="60" class="card-desc">• 赠品标价总面值超过主产品</text>
+      <text x="12" y="76" class="card-desc">• 例：配置文件库 + 紧急连线券</text>
+    </g>
+
+    <!-- Component 3 -->
+    <g transform="translate(469, 60)">
+      <rect x="0" y="0" width="205" height="95" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
+      <text x="12" y="24" font-size="11" fill="#34d399" font-weight="700">3. 反向对赌承诺 (Risk)</text>
+      <text x="12" y="44" class="card-desc">• 彻底把失败风险从客户身上移走</text>
+      <text x="12" y="60" class="card-desc">• 严格执行下未达目标全额退款</text>
+      <text x="12" y="76" class="card-desc">• 已赠送所有模版资料永久保留</text>
+    </g>
+
+    <!-- Component 4 -->
+    <g transform="translate(694, 60)">
+      <rect x="0" y="0" width="202" height="95" rx="6" fill="#1e293b" stroke="#fb7185" stroke-width="1"/>
+      <text x="12" y="24" font-size="11" fill="#fb7185" font-weight="700">4. 真实稀缺性 (Scarcity)</text>
+      <text x="12" y="44" class="card-desc">• 单兵精力有限是客观物理事实</text>
+      <text x="12" y="60" class="card-desc">• 明确限制：“本月仅接 3 席位”</text>
+      <text x="12" y="76" class="card-desc">• 激发紧迫感，促成当下拍板</text>
+    </g>
+  </g>
+</svg>

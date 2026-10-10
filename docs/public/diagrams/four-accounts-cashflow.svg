@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="finance-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070D18" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#040813" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="fin-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+
+    <!-- 卡片渐变 -->
+    <linearGradient id="main-acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#075985" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="tax-acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991B1B" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7F1D1D" stop-opacity="0.5" />
+    </linearGradient>
+    <linearGradient id="opex-acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#92400E" stop-opacity="0.5" />
+    </linearGradient>
+    <linearGradient id="pay-acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="620" fill="url(#finance-bg)" />
+  <rect width="1000" height="620" fill="url(#fin-grid)" />
+
+  <!-- 顶部标题 -->
+  <g transform="translate(50, 42)">
+    <rect x="0" y="0" width="165" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1" />
+    <text x="82" y="16" fill="#34D399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">CASH FLOW SYSTEM</text>
+    <text x="180" y="18" fill="#F8FAFC" font-size="22" font-weight="800" font-family="system-ui, sans-serif">一人公司四账户财税隔离与安全现金流系统</text>
+    <text x="0" y="44" fill="#94A3B8" font-size="13" font-family="system-ui, sans-serif">杜绝“公私混用与年底税崩”：用结构化资金瀑布流，让每一分钱都有明确归属与合规凭据。</text>
+  </g>
+
+  <!-- 顶部：收入总入口 (客户付款 100%) -->
+  <g transform="translate(300, 115)">
+    <rect x="0" y="0" width="400" height="72" rx="12" fill="url(#main-acc-grad)" stroke="#38BDF8" stroke-width="2" />
+    <circle cx="36" cy="36" r="18" fill="rgba(56, 189, 248, 0.2)" />
+    <text x="36" y="42" fill="#38BDF8" font-size="18" font-weight="bold" text-anchor="middle">📥</text>
+    <text x="68" y="32" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">账户一：收入归集主账户 (Revenue 100%)</text>
+    <text x="68" y="52" fill="#BAE6FD" font-size="12" font-family="system-ui, sans-serif">微信支付商户 / 支付宝企业版 / Stripe / 对公银行户（严禁个人开销）</text>
+  </g>
+
+  <!-- 分流通道连线与箭头 -->
+  <g transform="translate(500, 187)">
+    <!-- 垂直主干 -->
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#38BDF8" stroke-width="2" />
+    <!-- 水平分配枝干 -->
+    <line x1="-330" y1="40" x2="330" y2="40" stroke="#38BDF8" stroke-width="2" />
+    <!-- 向下支线 1 -->
+    <line x1="-330" y1="40" x2="-330" y2="70" stroke="#EF4444" stroke-width="2" stroke-dasharray="4,2" />
+    <!-- 向下支线 2 -->
+    <line x1="-110" y1="40" x2="-110" y2="70" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4,2" />
+    <!-- 向下支线 3 -->
+    <line x1="110" y1="40" x2="110" y2="70" stroke="#10B981" stroke-width="2" stroke-dasharray="4,2" />
+    <!-- 向下支线 4 -->
+    <line x1="330" y1="40" x2="330" y2="70" stroke="#A855F7" stroke-width="2" stroke-dasharray="4,2" />
+  </g>
+
+  <!-- 下方四大子账户卡片 (总宽 900, 每个宽 210, 间距 20) -->
+  <g transform="translate(50, 260)">
+    <!-- 账户 2：税费储备金 (20%~25%) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="210" height="235" rx="12" fill="url(#tax-acc-grad)" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="14" y="14" width="70" height="20" rx="4" fill="rgba(239, 68, 68, 0.2)" />
+      <text x="49" y="28" fill="#FCA5A5" font-size="10" font-weight="bold" text-anchor="middle">20% ~ 25%</text>
+      <text x="14" y="56" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">账户二：税费储备金</text>
+      <text x="14" y="74" fill="#F87171" font-size="11" font-family="system-ui, sans-serif">Tax Reserve（绝对红线）</text>
+      <line x1="14" y1="88" x2="196" y2="88" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="110" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 增值税、个税、企业所得税</text>
+      <text x="14" y="130" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 金税四期合规预留</text>
+      <text x="14" y="150" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 财务代理记账报税费</text>
+      <text x="14" y="185" fill="#EF4444" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">🔒 铁律：进账即自动划扣</text>
+      <text x="14" y="205" fill="#FCA5A5" font-size="10" font-family="system-ui, sans-serif">无论任何紧急情况不得动用！</text>
+    </g>
+
+    <!-- 账户 3：运营成本金 (15%~20%) -->
+    <g transform="translate(230, 0)">
+      <rect x="0" y="0" width="210" height="235" rx="12" fill="url(#opex-acc-grad)" stroke="#F59E0B" stroke-width="1.5" />
+      <rect x="14" y="14" width="70" height="20" rx="4" fill="rgba(245, 158, 11, 0.2)" />
+      <text x="49" y="28" fill="#FCD34D" font-size="10" font-weight="bold" text-anchor="middle">15% ~ 20%</text>
+      <text x="14" y="56" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">账户三：运营工具金</text>
+      <text x="14" y="74" fill="#FBBF24" font-size="11" font-family="system-ui, sans-serif">OpEx（一人运转命脉）</text>
+      <line x1="14" y1="88" x2="196" y2="88" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="110" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• AI API (Claude / OpenAI)</text>
+      <text x="14" y="130" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 域名/云服务器/托管</text>
+      <text x="14" y="150" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 生产力 SaaS (Notion/飞书)</text>
+      <text x="14" y="185" fill="#F59E0B" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">⚡ 原则：按季精简低效订阅</text>
+      <text x="14" y="205" fill="#FCD34D" font-size="10" font-family="system-ui, sans-serif">月工具成本控制在 1500 元内</text>
+    </g>
+
+    <!-- 账户 4：创始人薪酬 (40%~50%) -->
+    <g transform="translate(460, 0)">
+      <rect x="0" y="0" width="210" height="235" rx="12" fill="url(#pay-acc-grad)" stroke="#10B981" stroke-width="1.5" />
+      <rect x="14" y="14" width="70" height="20" rx="4" fill="rgba(16, 185, 129, 0.2)" />
+      <text x="49" y="28" fill="#6EE7B7" font-size="10" font-weight="bold" text-anchor="middle">40% ~ 50%</text>
+      <text x="14" y="56" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">账户四：创始人薪酬</text>
+      <text x="14" y="74" fill="#34D399" font-size="11" font-family="system-ui, sans-serif">Owner's Pay（生活保障）</text>
+      <line x1="14" y1="88" x2="196" y2="88" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="110" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 每月固定日发放合规工资</text>
+      <text x="14" y="130" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 个人生活消费/房租房贷</text>
+      <text x="14" y="150" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 家庭储备金与健康险</text>
+      <text x="14" y="185" fill="#10B981" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">💡 机制：固定发薪制</text>
+      <text x="14" y="205" fill="#6EE7B7" font-size="10" font-family="system-ui, sans-serif">不因月营收暴增而随意挥霍</text>
+    </g>
+
+    <!-- 账户 5：战略缓冲储备金 (10%~15%) -->
+    <g transform="translate(690, 0)">
+      <rect x="0" y="0" width="210" height="235" rx="12" fill="rgba(88, 28, 135, 0.2)" stroke="#A855F7" stroke-width="1.5" />
+      <rect x="14" y="14" width="70" height="20" rx="4" fill="rgba(168, 85, 247, 0.2)" />
+      <text x="49" y="28" fill="#E9D5FF" font-size="10" font-weight="bold" text-anchor="middle">10% ~ 15%</text>
+      <text x="14" y="56" fill="#F8FAFC" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">账户五：战略抗逆池</text>
+      <text x="14" y="74" fill="#C084FC" font-size="11" font-family="system-ui, sans-serif">Safety Buffer（反脆弱）</text>
+      <line x1="14" y1="88" x2="196" y2="88" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <text x="14" y="110" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 储备 6~12 个月基准生活费</text>
+      <text x="14" y="130" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 突发退款/争议维权基金</text>
+      <text x="14" y="150" fill="#CBD5E1" font-size="11" font-family="system-ui, sans-serif">• 新业务探索无压力试错金</text>
+      <text x="14" y="185" fill="#C084FC" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">🛡️ 作用：消除生存焦虑</text>
+      <text x="14" y="205" fill="#E9D5FF" font-size="10" font-family="system-ui, sans-serif">拥有拒绝垃圾客户的“F**k-You Money”</text>
+    </g>
+  </g>
+
+  <!-- 底部关键铁律条 -->
+  <g transform="translate(50, 525)">
+    <rect x="0" y="0" width="900" height="55" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1" />
+    <text x="24" y="32" fill="#34D399" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">合规红线：</text>
+    <text x="95" y="32" fill="#F1F5F9" font-size="13" font-family="system-ui, sans-serif">“对公对私彻底物理隔离，绝不用公司卡刷个人超市消费；每月 1 号执行瀑布分流，你的一人公司就能平稳活过 10 年。”</text>
+    <text x="860" y="32" fill="#64748B" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">ZenOPC Architecture</text>
+  </g>
+</svg>

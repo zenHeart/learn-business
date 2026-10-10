@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- 网格图案 -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+
+    <!-- 卡片阴影 -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.45" />
+    </feDropShadow>
+
+    <!-- 阶段渐变 -->
+    <linearGradient id="gStage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gStage2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gStage3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="gStage4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- 漏斗贯穿渐变 -->
+    <linearGradient id="funnelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="33%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="66%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="580" fill="url(#bgGrad)" />
+  <rect width="1000" height="580" fill="url(#grid)" />
+
+  <!-- 头部标题区 -->
+  <g transform="translate(40, 28)">
+    <rect x="0" y="0" width="8" height="38" rx="4" fill="#06b6d4" />
+    <text x="20" y="24" fill="#f8fafc" font-size="20" font-weight="700" font-family="system-ui, -apple-system, sans-serif">
+      ZenOPC 信任资产与精准转化漏斗
+    </text>
+    <text x="20" y="42" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+      告别泛流量假繁荣 · 建立极窄高信任微私域 · 72小时价值培育 · 医生问诊无痛成交闭环
+    </text>
+    <rect x="760" y="4" width="200" height="28" rx="14" fill="#0369a1" fill-opacity="0.25" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="860" y="22" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+      一人公司转化率提升 5~10 倍
+    </text>
+  </g>
+
+  <!-- 贯穿漏斗背景流线 -->
+  <path d="M 60 100 L 940 100 L 890 440 L 110 440 Z" fill="url(#funnelGrad)" opacity="0.08" />
+
+  <!-- 阶段 1: 公域注意力捕获 -->
+  <g transform="translate(40, 95)" filter="url(#cardShadow)">
+    <rect width="215" height="350" rx="12" fill="url(#gStage1)" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="14" width="32" height="24" rx="6" fill="#3b82f6" />
+    <text x="30" y="30" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">01</text>
+    <text x="54" y="31" fill="#93c5fd" font-size="14" font-weight="700" font-family="system-ui, -apple-system, sans-serif">公域注意力捕获</text>
+    <text x="14" y="54" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif">建立专业信任锚点 (Attention)</text>
+
+    <!-- 子要素卡片 -->
+    <rect x="14" y="70" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="90" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">三大核心支柱内容</text>
+    <text x="24" y="108" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 痛点 Hook (3秒留存共鸣)</text>
+    <text x="24" y="122" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 认知重构 (揭示隐形盲区)</text>
+
+    <rect x="14" y="140" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="160" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">真实工作机制与证据</text>
+    <text x="24" y="178" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 透明公开一人执行日志</text>
+    <text x="24" y="192" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 真实失败复盘与数据证据</text>
+
+    <rect x="14" y="210" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="230" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">主攻全域阵地矩阵</text>
+    <text x="24" y="248" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 深度图文：公众号 / 知乎专栏</text>
+    <text x="24" y="262" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 破圈搜索：小红书 / X (Twitter)</text>
+
+    <!-- 底部指标 -->
+    <rect x="14" y="284" width="187" height="52" rx="6" fill="#0f172a" stroke="#1d4ed8" stroke-width="1"/>
+    <text x="24" y="303" fill="#60a5fa" font-size="10" font-weight="600" font-family="system-ui, -apple-system, sans-serif">核心交付指标：</text>
+    <text x="24" y="321" fill="#cbd5e1" font-size="10" font-family="system-ui, -apple-system, sans-serif">每周产出 2 篇深度认知复盘</text>
+  </g>
+
+  <!-- 阶段 2: 极窄私域筛选池 -->
+  <g transform="translate(275, 95)" filter="url(#cardShadow)">
+    <rect width="215" height="350" rx="12" fill="url(#gStage2)" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="14" width="32" height="24" rx="6" fill="#06b6d4" />
+    <text x="30" y="30" fill="#0f172a" font-size="12" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">02</text>
+    <text x="54" y="31" fill="#67e8f9" font-size="14" font-weight="700" font-family="system-ui, -apple-system, sans-serif">极窄私域筛选池</text>
+    <text x="14" y="54" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif">引流钩子与主动筛选 (Lead Magnet)</text>
+
+    <!-- 子要素卡片 -->
+    <rect x="14" y="70" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="90" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">无法抗拒的引流钩子</text>
+    <text x="24" y="108" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 生产力 Checklist / 自动化模板</text>
+    <text x="24" y="122" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 极简 10 分钟问题自诊断表</text>
+
+    <rect x="14" y="140" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="160" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">微行动筛选机制</text>
+    <text x="24" y="178" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 必须主动回复关键词索取</text>
+    <text x="24" y="192" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 过滤非目标群体与纯白嫖用户</text>
+
+    <rect x="14" y="210" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="230" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">私域留存载体</text>
+    <text x="24" y="248" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 个人微信 (标签化精准备注)</text>
+    <text x="24" y="262" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 专属 Newsletter (防封私有资产)</text>
+
+    <!-- 底部指标 -->
+    <rect x="14" y="284" width="187" height="52" rx="6" fill="#0f172a" stroke="#0891b2" stroke-width="1"/>
+    <text x="24" y="303" fill="#22d3ee" font-size="10" font-weight="600" font-family="system-ui, -apple-system, sans-serif">核心交付指标：</text>
+    <text x="24" y="321" fill="#cbd5e1" font-size="10" font-family="system-ui, -apple-system, sans-serif">公域转私域加微率 &gt; 15%</text>
+  </g>
+
+  <!-- 阶段 3: 黄金 72 小时培育 -->
+  <g transform="translate(510, 95)" filter="url(#cardShadow)">
+    <rect width="215" height="350" rx="12" fill="url(#gStage3)" stroke="#8b5cf6" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="14" width="32" height="24" rx="6" fill="#8b5cf6" />
+    <text x="30" y="30" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">03</text>
+    <text x="54" y="31" fill="#c4b5fd" font-size="14" font-weight="700" font-family="system-ui, -apple-system, sans-serif">黄金 72 小时培育</text>
+    <text x="14" y="54" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif">信任快速爬坡序列 (Nurturing)</text>
+
+    <!-- 子要素卡片 -->
+    <rect x="14" y="70" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="90" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Day 1: 即时履约与赠礼</text>
+    <text x="24" y="108" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 10分钟内秒送承诺资料</text>
+    <text x="24" y="122" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 附带意料之外的破冰小锦囊</text>
+
+    <rect x="14" y="140" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="160" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Day 2: 真实穿透案例</text>
+    <text x="24" y="178" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 拆解同类背景客户转型实录</text>
+    <text x="24" y="192" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 呈现从迷茫到交付的完整闭环</text>
+
+    <rect x="14" y="210" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="230" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Day 3: 观念对齐与排雷</text>
+    <text x="24" y="248" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 瓦解常见执行心魔与盲区</text>
+    <text x="24" y="262" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 抛出深度 1对1 诊断机会邀请</text>
+
+    <!-- 底部指标 -->
+    <rect x="14" y="284" width="187" height="52" rx="6" fill="#0f172a" stroke="#6d28d9" stroke-width="1"/>
+    <text x="24" y="303" fill="#a78bfa" font-size="10" font-weight="600" font-family="system-ui, -apple-system, sans-serif">核心交付指标：</text>
+    <text x="24" y="321" fill="#cbd5e1" font-size="10" font-family="system-ui, -apple-system, sans-serif">朋友圈/私信互动率 &gt; 35%</text>
+  </g>
+
+  <!-- 阶段 4: 医生问诊无痛成交 -->
+  <g transform="translate(745, 95)" filter="url(#cardShadow)">
+    <rect width="215" height="350" rx="12" fill="url(#gStage4)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="14" y="14" width="32" height="24" rx="6" fill="#10b981" />
+    <text x="30" y="30" fill="#0f172a" font-size="12" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">04</text>
+    <text x="54" y="31" fill="#6ee7b7" font-size="14" font-weight="700" font-family="system-ui, -apple-system, sans-serif">医生问诊无痛成交</text>
+    <text x="14" y="54" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif">匹配大满贯 Offer (Conversion)</text>
+
+    <!-- 子要素卡片 -->
+    <rect x="14" y="70" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="90" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">阶段 1: 瓶颈事实诊断</text>
+    <text x="24" y="108" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 聚焦真实卡点，拒绝自卖自夸</text>
+    <text x="24" y="122" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 帮助客户厘清关键卡点诱因</text>
+
+    <rect x="14" y="140" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="160" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">阶段 2: 处方化方案交付</text>
+    <text x="24" y="178" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 开出针对性疗愈路线图</text>
+    <text x="24" y="192" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 匹配结果承诺与阶梯产品</text>
+
+    <rect x="14" y="210" width="187" height="62" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <text x="24" y="230" fill="#e2e8f0" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif">阶段 3: 零阻力履约交付</text>
+    <text x="24" y="248" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 无风险退款承诺 / 超预期兑现</text>
+    <text x="24" y="262" fill="#94a3b8" font-size="10" font-family="system-ui, -apple-system, sans-serif">• 沉淀真实证言转动转介绍飞轮</text>
+
+    <!-- 底部指标 -->
+    <rect x="14" y="284" width="187" height="52" rx="6" fill="#0f172a" stroke="#047857" stroke-width="1"/>
+    <text x="24" y="303" fill="#34d399" font-size="10" font-weight="600" font-family="system-ui, -apple-system, sans-serif">核心交付指标：</text>
+    <text x="24" y="321" fill="#cbd5e1" font-size="10" font-family="system-ui, -apple-system, sans-serif">深度咨询成交转化率 &gt; 25%</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <line x1="255" y1="270" x2="273" y2="270" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="490" y1="270" x2="508" y2="270" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="725" y1="270" x2="743" y2="270" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- 底部对比横幅 -->
+  <g transform="translate(40, 465)">
+    <rect width="920" height="90" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    
+    <!-- 传统流量模式对比 -->
+    <g transform="translate(20, 15)">
+      <rect x="0" y="0" width="70" height="22" rx="4" fill="#dc2626" fill-opacity="0.2" stroke="#ef4444" stroke-width="1"/>
+      <text x="35" y="15" fill="#fca5a5" font-size="11" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">传统流量</text>
+      <text x="85" y="16" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+        追逐十万阅读假狂欢 ➔ 0.01% 泛流量转化 ➔ 低价课内卷 ➔ 算法封杀即归零（疲惫且无法持续）
+      </text>
+    </g>
+
+    <line x1="20" y1="45" x2="900" y2="45" stroke="#1e293b" stroke-width="1" />
+
+    <!-- ZenOPC 信任模式 -->
+    <g transform="translate(20, 55)">
+      <rect x="0" y="0" width="70" height="22" rx="4" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+      <text x="35" y="15" fill="#6ee7b7" font-size="11" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">ZenOPC</text>
+      <text x="85" y="16" fill="#f1f5f9" font-size="12" font-weight="500" font-family="system-ui, -apple-system, sans-serif">
+        300~500 精准专业受众 ➔ 50个高信任私域好友 ➔ 5~10个高客单闭环成交（¥20,000+ 稳定月利润）
+      </text>
+    </g>
+  </g>
+</svg>
