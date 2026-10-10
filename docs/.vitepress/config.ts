@@ -47,6 +47,7 @@ export default withMermaid(
       },
       { text: '📊 基准数据速查', link: '/appendix/benchmarks' },
       { text: '⚡ 快速导航', link: '/intro' },
+      { text: '📥 离线 EPUB', link: '/zenopc.epub', target: '_blank' },
     ],
 
     // 全书体系化侧栏：覆盖全生命周期所有环节

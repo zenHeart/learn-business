@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: 🤖 AI 提示词与模板库
       link: /toolkit/templates-and-prompts
+    - theme: alt
+      text: 📥 离线 EPUB 典藏版
+      link: /zenopc.epub
 
 features:
   - icon: 🧭
@@ -93,6 +96,14 @@ flowchart LR
 <div class="opc-card" style="margin-top: 2rem;">
   <div class="opc-card-title">📖 全书贯穿实操线：林凡的 90 天转型闭环</div>
   <p>为了让每位零基础读者都能学以致用，本书全程贯穿真实演化案例：<strong>林凡（32 岁前大厂工程师）</strong>，从盘点自身 API 与数据抓取隐性知识起步，拒绝做泛自媒体，锁定“独立站出海卖家数据自动化”极窄利基，设计 ¥1,999 的 DWY 交付方案。他在 90 天内零买量、仅凭 3 篇深度机制拆解长文与一张自动化诊断表，跑通了月入 ¥22,000 的可持续一人公司闭环。</p>
+</div>
+
+<div class="opc-card" style="margin-top: 2rem; border-color: #ea580c; background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);">
+  <div class="opc-card-title" style="color: #c2410c;">📥 随时随地离线精读：EPUB 典藏版免费下载</div>
+  <p>支持一键导入 <strong>微信读书、Apple Books、Kindle、掌阅、Kobo</strong> 等主流移动阅读器。内含全书 23 篇章节、3 篇实战工具箱、10 张出版级自包含 SVG 架构高清矢量图与无损代码高亮排版。</p>
+  <div style="margin-top: 1rem;">
+    <a href="/zenopc.epub" download="zenopc.epub" style="display: inline-block; background-color: #ea580c; color: #ffffff; padding: 0.6rem 1.4rem; border-radius: 8px; font-weight: bold; text-decoration: none;">📥 立即下载 zenopc.epub (全书离线版)</a>
+  </div>
 </div>
 
 </div>

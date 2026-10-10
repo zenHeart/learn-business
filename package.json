@@ -7,7 +7,9 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "build:epub": "node scripts/build-epub.mjs",
+    "build": "pnpm run build:epub && pnpm run docs:build"
   },
   "devDependencies": {
     "mermaid": "^11.17.2",

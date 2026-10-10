@@ -1,3 +1,8 @@
 node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+
+# EPUB build artifacts & zero-bloat policy
+*.epub
+.tmp-epub/
+docs/public/*.epub
