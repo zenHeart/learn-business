@@ -128,6 +128,7 @@ export default withMermaid(
           collapsed: true,
           items: [
             { text: '基准数据速查表 (转化率/MRR/中位数)', link: '/appendix/benchmarks' },
+            { text: '一人 AI 产品案例（作者一手披露）', link: '/appendix/ai-product-cases-founder-disclosed' },
             { text: '工程师转管理与商业决策', link: '/appendix/eng-to-manager' },
             { text: '商业沟通与向上汇报全案', link: '/appendix/reporting' },
           ],
