@@ -130,6 +130,7 @@ export default withMermaid(
             { text: '基准数据速查表 (转化率/MRR/中位数)', link: '/appendix/benchmarks' },
             { text: '工程师转管理与商业决策', link: '/appendix/eng-to-manager' },
             { text: '商业沟通与向上汇报全案', link: '/appendix/reporting' },
+            { text: '创作者收款平台条款对照 (Gumroad/Ko-fi/BMC)', link: '/appendix/payment-platforms-creator' },
           ],
         },
       ],
